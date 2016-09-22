@@ -6,13 +6,13 @@ $('.login').on('submit', function(e) {
   var $this = $(this),
     $state = $this.find('button > .state');
   $this.addClass('loading');
-  $state.html('Cargando');
+  //$state.html('Cargando');
   setTimeout(function() {
     $this.addClass('ok');
-    $state.html('Bienvenido');
+    //$state.html('Bienvenido');
     window.open('../../Intranet/index.html', '_self', '', '');
     setTimeout(function() {
-      $state.html('Acceder');
+      //$state.html('Acceder');
       $this.removeClass('ok loading');
       working = false;
     }, 4000);
