@@ -10,7 +10,11 @@ $('.login').on('submit', function(e) {
   setTimeout(function() {
     $this.addClass('ok');
     $state.html('Bienvenido');
+<<<<<<< HEAD
     window.open('../Intranet/index.html', '_self', '', '');
+=======
+    window.open("../index.html", '_self', 'no', false);
+>>>>>>> origin/master
     setTimeout(function() {
       $state.html('Acceder');
       $this.removeClass('ok loading');
