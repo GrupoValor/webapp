@@ -10,7 +10,7 @@ $('.login').on('submit', function(e) {
   setTimeout(function() {
     $this.addClass('ok');
     $state.html('Bienvenido');
-    window.open('../../Intranet/index.html', '_self', '', '');
+    window.open('../../Intranet/index.html', '_self', 'no', false);
     setTimeout(function() {
       $state.html('Acceder');
       $this.removeClass('ok loading');
