@@ -61,7 +61,7 @@ img 		{ border: 0; }
 .popimage-outer	{
 		max-width: 100%;
 		min-width: 700px;
-		max-height: 329px;
+		max-height: 150px;
 		overflow: hidden;
 		text-align: center;
 		margin: 0 auto;
