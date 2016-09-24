@@ -202,19 +202,22 @@
 	   
     </article>    
 
-    <script src="http://maps.google.com/maps/api/js?sensor=false&callback=iniciar">
-    </script>
-
-    <script>
-	    function iniciar() {
-	    var mapOptions = {
-	    center: new google.maps.LatLng(25.80, -80.30),
-	    zoom: 10,
-	    mapTypeId: google.maps.MapTypeId.ROADMAP};
-	    var map = new google.maps.Map(document.getElementById("map"),mapOptions);}		
+    
+	<script type="text/javascript">
+	//<![CDATA[   
+	google.load('maps', '2', {callback:simple2});var map;
+	function simple2(){	
+	if (GBrowserIsCompatible()) { 
+	var map = new GMap2(document.getElementById("map2"));
+	map.addControl(new GLargeMapControl());
+	map.addControl(new GMapTypeControl());	  
+	map.setCenter(new GLatLng(22.5200,-82.1100),7);}}
+	window.onload=function(){simple2();}
+	//]]>
 	</script>
+	<div id="map2" style="width:360px;height:200px;border:2px solid green;"></div>
 
-	<div id="map"></div>
+
   
 </section>
 
