@@ -410,17 +410,27 @@
 					</div>
 				</div><!-- /.sidebar-shortcuts -->
 
-				<ul class="nav nav-list">
-					<li class="">
+								<ul class="nav nav-list">
+					<li class="active">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
-							<span class="menu-text"> Dashboard </span>
+							<span class="menu-text"> Principal </span>
 						</a>
 
 						<b class="arrow"></b>
 					</li>
+                    
+                    <li class="">
+                    <a href="profile.html">
+							<!--<i class="menu-icon fa fa-list"></i>-->
+                            <i class="menu-icon fa fa-user"></i>
+							<span class="menu-text"> Página Personal </span>
 
-					<li class="">
+							<!--<b class="arrow f-angle-down"></b>-->
+						</a>
+                    </li>
+
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
@@ -620,37 +630,6 @@
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-list"></i>
-							<span class="menu-text"> Tables </span>
-
-							<b class="arrow fa fa-angle-down"></b>
-						</a>
-
-						<b class="arrow"></b>
-
-						<ul class="submenu">
-							<li class="">
-								<a href="tables.html">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Simple &amp; Dynamic
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-
-							<li class="">
-								<a href="jqgrid.html">
-									<i class="menu-icon fa fa-caret-right"></i>
-									jqGrid plugin
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-						</ul>
-					</li>
-
-					<li class="active open">
-						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-pencil-square-o"></i>
 							<span class="menu-text"> Registro de casos </span>
 
@@ -660,7 +639,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="registro_casos.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Registro
@@ -670,45 +649,40 @@
 							</li>
 
 							<li class="">
-								<a href="busquda_casos.html">
+								<a href="busqueda_casos.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Busqueda
 								</a>
 
 								<b class="arrow"></b>
 							</li>
-							<!--
+							<!--	
 							<li class="">
 								<a href="form-wizard.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Wizard &amp; Validation
 								</a>
-
 								<b class="arrow"></b>
 							</li>
-
 							<li class="">
 								<a href="wysiwyg.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Wysiwyg &amp; Markdown
 								</a>
-
 								<b class="arrow"></b>
 							</li>
-
 							<li class="">
 								<a href="dropzone.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Dropzone File Upload
 								</a>
-
 								<b class="arrow"></b>
 							</li>-->
 						</ul>
 					</li>
 
 					<li class="">
-						<a href="RubricaTareasAcademicas.html">
+						<a href="tables.html">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text"> Tareas Acad&eacute;micas </span>
 						</a>
@@ -716,7 +690,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="calendar.html">
 							<i class="menu-icon fa fa-calendar"></i>
 
@@ -732,7 +706,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="gallery.html">
 							<i class="menu-icon fa fa-picture-o"></i>
 							<span class="menu-text"> Gallery </span>
@@ -741,7 +715,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-tag"></i>
 							<span class="menu-text"> More Pages </span>
@@ -826,7 +800,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-file-o"></i>
 
@@ -886,8 +860,10 @@
 
 								<b class="arrow"></b>
 							</li>
-							
-							<li class="">
+						</ul>
+					</li>
+                    
+                    <li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-book"></i>
 							<span class="menu-text"> Directorio </span>
@@ -917,7 +893,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="hidden">
 								<a href="jqgrid.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Modificación
@@ -927,7 +903,14 @@
 							</li>
 						</ul>
 					</li>
-						</ul>
+
+                    <li class="">
+						<a href="mapa.html">
+							<i class="menu-icon fa fa-map-marker"></i>
+							<span class="menu-text"> Mapa </span>
+						</a>
+
+						<b class="arrow"></b>
 					</li>
 				</ul><!-- /.nav-list -->
 
@@ -951,7 +934,7 @@
 							<li class="active">Registro</li>
 						</ul><!-- /.breadcrumb -->
 
-						<div class="nav-search" id="nav-search">
+						<!--<div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
 									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
