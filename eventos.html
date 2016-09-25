@@ -193,8 +193,10 @@
                                     <div class="documentos-busc diplo col-md-12">
                                         <div class="col-md-6 busc-control">
                                             <label class="control-label">Ordenar por:</label>
-                                            <select class="form-control" onchange="javascript:window.document.location.href='http://www.pucp.edu.pe/formacion-continua/diplomaturas/?orden='+this.value+'&areatematica=&lugarprovincia=&modalidad=&facultad='">
-                                                <option value="proximos-inicios" >Proximos inicios</option><option value="mas-vistos" >Más vistos</option>                                            </select>
+                                            <!--select class="form-control" onchange="javascript:window.document.location.href='http://www.pucp.edu.pe/formacion-continua/diplomaturas/?orden='+this.value+'&areatematica=&lugarprovincia=&modalidad=&facultad='"-->
+                                            <select class="form-control" onchange="javascript:window.document.location.href=this.value+'.html'">
+						<!--option value="proximos-inicios" >Proximos inicios</option><option value="mas-vistos" >Más vistos</option>                                            </select-->
+						<option value="eventos" >Proximos inicios</option><option value="eventos" >Más vistos</option>                                            </select>
                                         </div>
                                         <div class="buscador-intern busc-barra col-md-6">
                                             <div class="form-group form-slider">
