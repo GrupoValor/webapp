@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	
+	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
 		<title>Intranet | Directorio | Búsqueda</title>
@@ -619,7 +621,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-pencil-square-o"></i>
 							<span class="menu-text"> Registro de casos </span>
@@ -639,7 +641,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="busqueda_casos.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Busqueda
@@ -854,7 +856,7 @@
 						</ul>
 					</li>
                     
-                    <li class="active open">
+                    <li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-book"></i>
 							<span class="menu-text"> Directorio </span>
@@ -875,7 +877,7 @@
 								<b class="arrow"></b>
 							</li>
                             
-							<li class="active">
+							<li class="">
 								<a href="directorio_busqueda.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Búsqueda
@@ -1032,12 +1034,12 @@
 												<thead>
 													<tr>
                                                         <th class="hidden"></th>
-														<th>Nombres</th>
-														<th>Apellidos</th>
-                                                        <th>Teléfono</th>
-                                                        <th>E-mail</th>
-														<th>Dirección</th>
-														<th>Modificar</th>
+														<th>Codigo</th>
+														<th>Nombre</th>
+                                                        <th>Tipo caso</th>
+                                                		<th>Fecha Ini</th>
+														<th>Fecha Fin</th>
+														<th>Estado</th>
 													</tr>
 												</thead>
 
@@ -1046,151 +1048,13 @@
 														<td class="hidden">
 														</td>
 
-														<td>Luis</td>
-														<td>Flores</td>
-														<td >123-1234</td>
-														<td>luis.flores@pucp.edu.pe</td>
-
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Milagros</td>
-														<td>Ruiz</td>
-														<td >567-8901</td>
-														<td>mili.r@pucp.edu.pe</td>
-
-														<td class="hidden-480">Magdalena</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Brajean</td>
-														<td>Junchaya</td>
-														<td >324-1234</td>
-														<td>braj.j@pucp.pe</td>
-							    							<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
+														<td>a1512</td>
+														<td>Juan Perez</td>
+														<td >Caso 1</td>
+														<td>15/05/2015</td>
+														<td>15/07/2015</td>
+														<td>Cerrado</td>
 														
-
 														<td class="hidden">
 															<div class="hidden-sm hidden-xs action-buttons">
 																<a class="blue" href="#">
@@ -1241,23 +1105,18 @@
 															</div>
 														</td>
 													</tr>
-                                                    
-                                                    <tr>
+													
+													<tr>
 														<td class="hidden">
 														</td>
 
-														<td>Mauricio</td>
-														<td>Castañeda</td>
-														<td >324-6453</td>
-														<td>mau.casta@pucp.pe</td>
-														<td class="hidden-480">	San Miguel</td>
-							    							<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
+														<td>b1577</td>
+														<td>Nei Cahuantico</td>
+														<td >caso 2</td>
+														<td>16/05/2015</td>
+														<td>17/07/2015</td>
+														<td>En seguimiento</td>
 														
-
 														<td class="hidden">
 															<div class="hidden-sm hidden-xs action-buttons">
 																<a class="blue" href="#">
@@ -1308,155 +1167,19 @@
 															</div>
 														</td>
 													</tr>
-                                                    
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Juanjo</td>
-														<td>Salas</td>
-														<td >435-2352</td>
-														<td>juanjo.salas@pucp.edu.pe</td>
 														
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    
-                                                    <tr>
+													
+													<tr>
 														<td class="hidden">
 														</td>
 
-														<td>Marcio</td>
-														<td>Pereyra</td>
-														<td >235-8475</td>
-														<td>marcio.pereyra@pucp.edu.pe</td>
-														<td class="hidden-480">	San Miguel</td>
-							    							<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-
-
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Juanjo</td>
-														<td>Ramirez</td>
-														<td >454-4643</td>
-														<td>juanjo.ramirez@pucp.edu.pe</td>
+														<td>a1512</td>
+														<td>Jaspar Cornio</td>
+														<td >Caso 3</td>
+														<td>17/05/2015</td>
+														<td>17/07/2015</td>
+														<td>En seguimiento</td>
 														
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
 														<td class="hidden">
 															<div class="hidden-sm hidden-xs action-buttons">
 																<a class="blue" href="#">
@@ -1507,333 +1230,8 @@
 															</div>
 														</td>
 													</tr>
+																									
                                                     
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Kervy</td>
-														<td>Rivas</td>
-														<td >546-4353</td>
-														<td>kervy.rivas@pucp.edu.pe</td>
-														
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Diana</td>
-														<td>Flores</td>
-														<td >213-1234</td>
-														<td>diana.flores@pucp.edu.pe</td>
-
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Karina</td>
-														<td>Alfaro</td>
-														<td >676-9498</td>
-														<td>kari.alfaro@pucp.edu.pe</td>
-
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                               
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Andres</td>
-														<td>Leon</td>
-														<td >495-9876</td>
-														<td>andres.leon@pucp.edu.pe</td>
-
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-                                                    <tr>
-														<td class="hidden">
-														</td>
-
-														<td>Flor</td>
-														<td>Noriega</td>
-														<td >732-2389</td>
-														<td>flor.noriega@pucp.edu.pe</td>
-
-														<td class="hidden-480">	San Miguel</td>
-														<td><button class="btn btn-info">
-															<i class="ace-icon fa fa-pencil">
-															</i>
-															</button>
-														</td>
-														<td class="hidden">
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
                                                    </tbody>
 											</table>
 										</div>
