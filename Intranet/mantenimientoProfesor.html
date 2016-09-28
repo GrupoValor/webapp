@@ -951,27 +951,75 @@
 							</li>
                             
 							<li class="">
-								<a href="mantenimientoJP.html">
+								<a href="" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Jefe de Practica
+                                    <b class="arrow fa fa-angle-down"></b>
+                                    <ul class="submenu">
+                                        <li class="">
+                                            <a href="mantenimientoJP.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Registrar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        <li class="">
+                                            <a href="mantJPModificar.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Modificar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        
+                                    </ul>
 								</a>
 
 								<b class="arrow"></b>
 							</li>
                             
                             <li class="">
-								<a href="mantenimientoAlumno.html">
+								<a href="" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Alumno
+                                    <b class="arrow fa fa-angle-down"></b>
+                                    <ul class="submenu">
+                                        <li class="">
+                                            <a href="mantenimientoAlumno.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Registrar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        <li class="">
+                                            <a href="mantAlumModificar.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Modificar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        
+                                    </ul>
 								</a>
 
 								<b class="arrow"></b>
 							</li>
                             
                             <li class="">
-								<a href="mantenimientoCliente.html">
+								<a href="" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Cliente
+                                    <b class="arrow fa fa-angle-down"></b>
+                                    <ul class="submenu">
+                                        <li class="">
+                                            <a href="mantenimientoCliente.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Registrar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        <li class="">
+                                            <a href="mantClieModificar.html">
+									           <i class="menu-icon fa fa-caret-right"></i>
+                                            Modificar</a>
+                                            <b class="arrow"></b>
+                                        </li>
+                                        
+                                    </ul>
 								</a>
 
 								<b class="arrow"></b>
@@ -1004,9 +1052,12 @@
 							</li>
 
 							<li>
-								<a href="#">Mantenimiento</a>
+								<a href="#">Mantenimientos</a>
 							</li>
-							<li class="active">Profesor</li>
+                            <li>
+								<a href="#">Profesor</a>
+							</li>
+							<li class="active">Registrar</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!--<div class="nav-search" id="nav-search">
@@ -1098,10 +1149,10 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<form class="form-horizontal" role="form">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Codigo</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Codigo ID</label>
 
 										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="codigo" />
+											<input class="input-sm" type="text" id="form-field-4" placeholder="0001" />
 											<div class="space-2"></div>
 										</div>
 									</div>
@@ -1130,10 +1181,35 @@
 											<input class="input-sm" type="text" id="form-field-4" placeholder="Apellido materno" />
 											<div class="space-2"></div>
 										</div>
-									   </div>
+								    </div>
+                                    
+                                    
+                                    
+                                    <div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Tipo de Documento de Identificación          </label>
+
+															<select class="col-sm-4" id="form-field-select-1">
+																<option value=""></option>
+																<option value="AL">DNI</option>
+																<option value="AL">Libreta militar</option>
+																<option value="AL">documento 1</option>
+                                                                <option value="AL">documento 2</option>
+                                                                <option value="AL">documento 3</option>
+															</select>
+										
+									</div>
 									
+                                    <div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Número de Identificacion</label>
+
+										<div class="col-sm-9">
+											<input class="input-sm" type="text" id="form-field-4" placeholder="Número" />
+											<div class="space-2"></div>
+										</div>
+								    </div>
+                                    
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Nacimiento</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Fecha de Nacimiento</label>
 										<div class="col-sm-4">
 															<div class="col-sm-4">
 																<div class="input-group">
@@ -1147,122 +1223,76 @@
 									</div>
 									
 									
+									
+									
 									<div class="form-group">
-												<label class="col-sm-3 control-label no-padding-right">Sexo</label>
-
-												<div class="radio">
-													<label>
-														<input name="form-field-radio" type="radio" class="ace" />
-														<span class="lbl">Femenino</span>
-													</label>
-													<label>
-														<input name="form-field-radio" type="radio" class="ace" />
-														<span class="lbl">Masculino</span>
-													</label>
-												</div>
-					
+										
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Telefono 1</label>
+										<div class="col-sm-9">
+											<input type="text" id="spinner3" />
+											<div class="space-5"></div>
+										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Nivel educativo</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Telefono 2</label>
+
+										<div class="col-sm-9">
+											<input class="input-sm" type="text" id="form-field-4" />
+											<div class="space-2"></div>
+										</div>
+									</div>
+									
+									
+									<div class="form-group">
+										
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Correo Electronico</label>
+										<div class="col-sm-9">
+											<input type="text" id="spinner3" placeholder="Correo electronico"/>
+											<div class="space-6"></div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Clínica Jurídica del Profesor</label>
 
 															<select class="col-sm-4" id="form-field-select-1">
 																<option value=""></option>
-																<option value="AL">Primaria</option>
-																<option value="AL">Secundaria</option>
-																<option value="AL">Superior</option>
+																<option value="AL">clinica 1</option>
+																<option value="AL">clinica 2</option>
+																<option value="AL">clinica 3</option>
+                                                                <option value="AL">clinica 4</option>
+                                                                
 															</select>
 										
 									</div>
-									
-									<div class="form-group">
+                                    
+                                    <div class="form-group">
 										
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">N&uacute;mero de hijos</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Usuario</label>
 										<div class="col-sm-9">
-											<input type="text" id="spinner3" />
+											<input type="text" id="spinner3" placeholder=""/>
 											<div class="space-6"></div>
 										</div>
 									</div>
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Ocupaci&oacute;n</label>
-
-										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="Ocupacion" />
-											<div class="space-2"></div>
-										</div>
-									</div>
-									
-									
-									<div class="form-group">
+                                    
+                                    <div class="form-group">
 										
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Dependientes</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Password</label>
 										<div class="col-sm-9">
-											<input type="text" id="spinner3" />
+											<input type="text" id="spinner3" placeholder=""/>
 											<div class="space-6"></div>
 										</div>
 									</div>
-									
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Tel&eacute;fono</label>
-
-										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="Telefono" />
-											<div class="space-2"></div>
-										</div>
-									</div>
-									
-									<div class="control-group">
-												<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Población vulnerable</label>
-
-												<div class="checkbox">
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Desplazado</span>
-													</label>
-													
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Menor de edad</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Anciano</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Discapacitado</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Otros</span>
-													</label>
-												</div>
-											
-									</div>
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Observaciones</label>
-
-										<div class="col-sm-4">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="Observaciones" />
-											<div class="space-2"></div>
-										</div>
-									</div>
-									
-											
-									<div class="form-group">
-												<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Archivos</label>
-												<div class="col-sm-4">
-																<input type="file" id="id-input-file-2" />
-												</div>
-									</div>
-									
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
 									<div align="center">		
 									<button class="btn btn-info" type="button">
 												<i class="ace-icon fa fa-check bigger-110"></i>
-												Registrar Caso
+												Registrar Profesor
 									</button>
 									</div>
 									
