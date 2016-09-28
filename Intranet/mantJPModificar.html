@@ -1184,23 +1184,39 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<form class="form-horizontal" role="form">
-									<div class="form-group">
-										<label class="control-label col-xs-12 col-sm-3 no-padding-right"> Select2 </label>
-
-										<div class="col-xs-12 col-sm-9">
-											<select multiple="" id="state" name="state" class="select2" data-placeholder="Click to Choose...">
-												<option href="mantenimientoJP.html" value="AL">Jefe de practica 1</option>
-												<option value="AK">Jefe de practica 2</option>
-												<option value="AZ">Jefe de practica 3</option>
-												<option value="AR">Jefe de practica 4</option>
-												<option value="CA">Jefe de practica 5</option>
-												<option value="CO">Jefe de practica 6</option>
-												<option value="CT">Jefe de practica 7</option>
-												
-											</select>
-
-										</div>
+									    
+                                    
+                                        <div class="text-center">
+										<label class="col-sm- control-label no-padding-right" for="form-field-4">Jefes de Práctica          </label>
+                                        </div>
+                                            
+                                    <div class="text-center">
+                                        <select class="select2" id="form-field-select-1" data-placeholder="Click para elegir...">
+													<option value=""></option>
+													<option value="AL">Jefe de practica 1</option>
+												    <option value="AK">Jefe de practica 2</option>
+												    <option value="AZ">Jefe de practica 3</option>
+												    <option value="AR">Jefe de practica 4</option>
+												    <option value="CA">Jefe de practica 5</option>
+												    <option value="CO">Jefe de practica 6</option>
+												    <option value="CT">Jefe de practica 7</option>
+												</select>
+									   	
 									</div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    
+                                    <div class="text-center">
+										<button type="reset" id="boton" class="btn btn-info">
+                                            <i class="ace-icon fa fa-check bigger-110"></i>Buscar</button>
+									</div>   
+                                    
                                     </div>
 									</form>
 							</div><!-- /.col -->
@@ -1285,7 +1301,12 @@
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($) {
-				var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
+				$("#boton").OnClick(function (){
+                    alert("holaaaa");
+                    
+                });
+                
+                var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
 				var container1 = demo1.bootstrapDualListbox('getContainer');
 				container1.find('.btn').addClass('btn-white btn-info btn-bold');
 			
