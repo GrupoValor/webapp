@@ -689,141 +689,6 @@
 
 						<b class="arrow"></b>
 					</li>
-					<li class="">
-						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-desktop"></i>
-							<span class="menu-text">
-								Mantenimientos
-							</span>
-
-							<b class="arrow fa fa-angle-down"></b>
-						</a>
-
-						<b class="arrow"></b>
-
-						<ul class="submenu">
-							<li class="">
-								<a href="#" class="dropdown-toggle">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Profesor
-									<b class="arrow fa fa-angle-down"></b>
-								</a>
-
-								<b class="arrow"></b>
-
-								<ul class="submenu">
-									<li class="">
-										<a href="mantenimientoProfesor.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Registrar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="mantProfModificar.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Modificar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-								</ul>
-							</li>
-
-							<li class="">
-								<a href="#" class="dropdown-toggle">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Jefe de Practica
-									<b class="arrow fa fa-angle-down"></b>
-								</a>
-
-								<b class="arrow"></b>
-
-								<ul class="submenu">
-									<li class="">
-										<a href="mantenimientoJP.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Registrar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="mantJPModificar.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Modificar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-								</ul>
-							</li>
-
-							<li class="">
-								<a href="#" class="dropdown-toggle">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Alumno
-									<b class="arrow fa fa-angle-down"></b>
-								</a>
-
-								<b class="arrow"></b>
-
-								<ul class="submenu">
-									<li class="">
-										<a href="mantenimientoAlumno.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Registrar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="mantAlumModificar.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Modificar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-								</ul>
-							</li>
-
-							<li class="">
-								<a href="#" class="dropdown-toggle">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Cliente
-									<b class="arrow fa fa-angle-down"></b>
-								</a>
-
-								<b class="arrow"></b>
-
-								<ul class="submenu">
-									<li class="">
-										<a href="mantenimientoCliente.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Registrar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="mantClieModificar.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Modificar
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-								</ul>
-							</li>
-							
-						</ul>
-					</li>
 				</ul><!-- /.nav-list -->
 
 				
@@ -843,7 +708,7 @@
 							<li>
 								<a href="#">Tareas acad&eacute;micas</a>
 							</li>
-							<li class="active">Registro de r&uacute;bricas</li>
+							<li class="active">Mantenimiento de r&uacute;bricas</li>
 						</ul><!-- /.breadcrumb -->
 					</div>
 
@@ -855,7 +720,7 @@
 						<p>Aqu&iacute; el profesor puede editar las r&uacute;bricas para registrar el avance de sus alumnos en el curso.</p>
 						
 						<!-- CONTROL DE TABLAS -->
-						<div class="col-sm-6">
+						<div class="">
 							Se mostrar&aacute;n 
 							<div class="ace-spinner middle" style="width: 115px;">
 								<div class="input-group">
@@ -872,7 +737,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-																	
+								
 								<h3 class="header smaller lighter blue">
 									R&uacute;brica 1:
 									<input type="text" class="input-xxlarge" value="Participaci&oacute;n" />
@@ -896,12 +761,7 @@
 													</th>
 													<th>T&iacute;tulo del rubro</th>
 													<th>M&aacute;ximo puntaje</th>
-													<th class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir filas seleccionadas"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar filas seleccionadas"></a>
-														</div>
-													</th>
+													<th></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -913,16 +773,13 @@
 														</label>
 													</td>
 													<td>
-														<input type="text" class="input-xlarge" value="Puntualidad" />
+														<input type="text" class="input-large" value="Puntualidad" />
 													</td>
 													<td>
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
-														</div>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
 													</td>
 												</tr>
 												<tr>
@@ -933,18 +790,30 @@
 														</label>
 													</td>
 													<td>
-														<input type="text" class="input-xlarge" value="Participaci&oacute;n y discusi&oacute;n" />
+														<input type="text" class="input-large" value="Participaci&oacute;n y discusi&oacute;n" />
 													</td>
 													<td>
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
-														</div>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
 													</td>
 												</tr>
+												<tr>
+													<td colspan=4 style="background-color:#EFF3F8">
+														<div class="center">
+															<button class="btn btn-white btn-info btn-bold">
+																<i class="ace-icon fa fa-plus-circle bigger-120 blue"></i>
+																A&ntilde;adir fila al final
+															</button>
+															&nbsp;&nbsp;
+															<button class="btn btn-white btn-danger btn-bold">
+																<i class="ace-icon fa fa-trash-o bigger-120 red"></i>
+																Eliminar filas
+															</button>
+														</div>
+													</td>
+												</tr>	
 											</tbody>
 										</table>
 									</div><!-- /.span -->
@@ -973,12 +842,7 @@
 													</th>
 													<th>T&iacute;tulo del rubro</th>
 													<th>M&aacute;ximo puntaje</th>
-													<th class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir filas seleccionadas"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar filas seleccionadas"></a>
-														</div>
-													</th>
+													<th></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -996,10 +860,7 @@
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
-														</div>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
 													</td>
 												</tr>
 												<tr>
@@ -1010,16 +871,13 @@
 														</label>
 													</td>
 													<td>
-														<input type="text" class="input-xlarge" value="Ejercicio profesional" />
+														<input type="text" class="input-large" value="Ejercicio profesional" />
 													</td>
 													<td>
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
-														</div>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
 													</td>
 												</tr>
 												<tr>
@@ -1036,10 +894,7 @@
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
-														</div>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
 													</td>
 												</tr>
 												<tr>
@@ -1056,9 +911,38 @@
 														<input type="text" class="input-mini" value="5" />
 													</td>
 													<td class="center">
-														<div class="action-buttons">
-															<a href="#" class="ace-icon glyphicon glyphicon-plus blue" title="A&ntilde;adir fila"></a>
-															<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
+													</td>
+												</tr>
+												<tr>
+													<td class="center">
+														<label class="pos-rel">
+															<input type="checkbox" class="ace" />
+															<span class="lbl"></span>
+														</label>
+													</td>
+													<td>
+														<input type="text" class="input-large" placeholder="T&iacute;tulo del rubro" />
+													</td>
+													<td>
+														<input type="text" class="input-mini" placeholder="Puntaje" />
+													</td>
+													<td class="center">
+														<a href="#" class="ace-icon glyphicon glyphicon-trash red" title="Eliminar fila"></a>
+													</td>
+												</tr>
+												<tr>
+													<td colspan=4 style="background-color:#EFF3F8">
+														<div class="center">
+															<button class="btn btn-white btn-info btn-bold">
+																<i class="ace-icon fa fa-plus-circle bigger-120 blue"></i>
+																A&ntilde;adir fila al final
+															</button>
+															&nbsp;&nbsp;
+															<button class="btn btn-white btn-danger btn-bold">
+																<i class="ace-icon fa fa-trash-o bigger-120 red"></i>
+																Eliminar filas
+															</button>
 														</div>
 													</td>
 												</tr>
