@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Full Calendar - Ace Admin</title>
+		<title>Eventos</title>
 
 		<meta name="description" content="with draggable and editable events" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap-colorpicker.min.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
 		<!-- text fonts -->
 		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
 
@@ -64,17 +65,14 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="index.html" class="navbar-brand">
-						<small>
-							<i class="fa fa-leaf"></i>
-							Ace Admin
-						</small>
+					<a id="logo-intranet" href="index.html" class="navbar-brand">
+						
 					</a>
 				</div>
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey dropdown-modal">
+						<!--<li class="grey dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-tasks"></i>
 								<span class="badge badge-grey">4</span>
@@ -149,7 +147,7 @@
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li>-->
 
 						<li class="purple dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -219,7 +217,7 @@
 							</ul>
 						</li>
 
-						<li class="green dropdown-modal">
+						<!--<li class="green dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
 								<span class="badge badge-success">5</span>
@@ -327,21 +325,21 @@
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li>-->
 
 						<li class="light-blue dropdown-modal">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
-									<small>Welcome,</small>
-									Jason
+									<small>Bienvenido,</small>
+									Luis
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
 
 							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-								<li>
+								<li class="hide">
 									<a href="#">
 										<i class="ace-icon fa fa-cog"></i>
 										Settings
@@ -380,7 +378,7 @@
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
 
-				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+				<!--<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
 						<button class="btn btn-success">
 							<i class="ace-icon fa fa-signal"></i>
@@ -414,13 +412,23 @@
 					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
-							<span class="menu-text"> Dashboard </span>
+							<span class="menu-text"> Principal </span>
 						</a>
 
 						<b class="arrow"></b>
 					</li>
+                    
+                    <li class="">
+                    <a href="profile.html">
+							<!--<i class="menu-icon fa fa-list"></i>-->
+                            <i class="menu-icon fa fa-user"></i>
+							<span class="menu-text"> Página Personal </span>
 
-					<li class="">
+							<!--<b class="arrow f-angle-down"></b>-->
+						</a>
+                    </li>
+
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
@@ -620,39 +628,8 @@
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-list"></i>
-							<span class="menu-text"> Tables </span>
-
-							<b class="arrow fa fa-angle-down"></b>
-						</a>
-
-						<b class="arrow"></b>
-
-						<ul class="submenu">
-							<li class="">
-								<a href="tables.html">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Simple &amp; Dynamic
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-
-							<li class="">
-								<a href="jqgrid.html">
-									<i class="menu-icon fa fa-caret-right"></i>
-									jqGrid plugin
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-						</ul>
-					</li>
-
-					<li class="">
-						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-pencil-square-o"></i>
-							<span class="menu-text"> Forms </span>
+							<span class="menu-text"> Registro de casos </span>
 
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
@@ -661,23 +638,23 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="form-elements.html">
+								<a href="registro_casos.html">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Form Elements
+									Registro
 								</a>
 
 								<b class="arrow"></b>
 							</li>
 
 							<li class="">
-								<a href="form-elements-2.html">
+								<a href="busqueda_casos.html">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Form Elements 2
+									Busqueda
 								</a>
 
 								<b class="arrow"></b>
 							</li>
-
+							<!--	
 							<li class="">
 								<a href="form-wizard.html">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -703,20 +680,43 @@
 								</a>
 
 								<b class="arrow"></b>
-							</li>
+							</li>-->
 						</ul>
 					</li>
 
 					<li class="">
-						<a href="widgets.html">
+						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-list-alt"></i>
-							<span class="menu-text"> Widgets </span>
+							<span class="menu-text"> Tareas acad&eacute;micas </span>
+							<b class="arrow fa fa-angle-down"></b>
 						</a>
-
 						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="">
+								<a href="ta_alumno.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Alumno
+								</a>
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="ta_rubricas.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Mantenimiento de r&uacute;bricas
+								</a>
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="ta_notas.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Registro de notas
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
 					</li>
 
-					<li class="active">
+					<li class="hidden">
 						<a href="calendar.html">
 							<i class="menu-icon fa fa-calendar"></i>
 
@@ -732,7 +732,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="gallery.html">
 							<i class="menu-icon fa fa-picture-o"></i>
 							<span class="menu-text"> Gallery </span>
@@ -741,7 +741,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-tag"></i>
 							<span class="menu-text"> More Pages </span>
@@ -826,7 +826,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="hidden">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-file-o"></i>
 
@@ -888,6 +888,281 @@
 							</li>
 						</ul>
 					</li>
+                    
+                    <li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-book"></i>
+							<span class="menu-text"> Directorio </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+                            
+                            <li class="">
+								<a href="directorio_registro.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Registro
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+                            
+							<li class="">
+								<a href="directorio_busqueda.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Búsqueda
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="hidden">
+								<a href="jqgrid.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Modificación
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+                    			<li class="">
+						<a href="mapa.html">
+							<i class="menu-icon fa fa-map-marker"></i>
+							<span class="menu-text"> Mapa </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-desktop"></i>
+							<span class="menu-text">
+								Mantenimientos
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Profesor
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="mantenimientoProfesor.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Registrar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mantProfModificar.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Modificar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Jefe de Practica
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="mantenimientoJP.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Registrar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mantJPModificar.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Modificar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Alumno
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="mantenimientoAlumno.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Registrar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mantAlumModificar.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Modificar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Cliente
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="mantenimientoCliente.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Registrar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mantClieModificar.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Modificar
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+							
+						</ul>
+					</li> 
+                    <li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-file-o"></i>
+							<span class="menu-text">
+								Reportes
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="reporte1.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Reporte por alumno
+								</a>
+								<b class="arrow"></b>
+							</li>
+                            <li class="">
+								<a href="reporte2.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Reporte por caso
+								</a>
+								<b class="arrow"></b>
+							</li>
+                            <li class="">
+								<a href="reporte3.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Reporte 3
+								</a>
+								<b class="arrow"></b>
+							</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="active open"> <!--Gestor de contenidos-->
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-cog"></i>
+							<span class="menu-text">
+                                <small>Gestor de contenidos</small>
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+                            <li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									Noticias
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="gestor_noticias_registro.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Registro
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="gestor_noticias_busqueda.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Búsqueda
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+                            <li class="active">
+								<a href="gestor_eventos.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Eventos
+								</a>
+								<b class="arrow"></b>
+							</li>
+                        </ul>
+                    </li> <!--Gestor de contenido -->
 				</ul><!-- /.nav-list -->
 
 				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -903,10 +1178,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Calendar</li>
+							<li class="active">Eventos</li>
 						</ul><!-- /.breadcrumb -->
 
-						<div class="nav-search" id="nav-search">
+						<!--<div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
 									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
@@ -918,9 +1193,9 @@
 
 					<div class="page-content">
 						<div class="ace-settings-container" id="ace-settings-container">
-							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+							<!--<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
 								<i class="ace-icon fa fa-cog bigger-130"></i>
-							</div>
+							</div>-->
 
 							<div class="ace-settings-box clearfix" id="ace-settings-box">
 								<div class="pull-left width-50">
@@ -986,11 +1261,7 @@
 
 						<div class="page-header">
 							<h1>
-								Full Calendar
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									with draggable and editable events
-								</small>
+								Calendario de eventos
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -1128,12 +1399,12 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
-							Application &copy; 2013-2014
+							<span class="blue bolder">Grupo Valor</span>
+							Application &copy; 2016
 						</span>
 
 						&nbsp; &nbsp;
-						<span class="action-buttons">
+						<!--<span class="action-buttons">
 							<a href="#">
 								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
 							</a>
@@ -1145,7 +1416,7 @@
 							<a href="#">
 								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
 							</a>
-						</span>
+						</span>-->
 					</div>
 				</div>
 			</div>
