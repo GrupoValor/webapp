@@ -925,7 +925,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="">
+							<li class="active open">
 								<a href="#" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Profesor
@@ -935,7 +935,7 @@
 								<b class="arrow"></b>
 
 								<ul class="submenu">
-									<li class="">
+									<li class="active">
 										<a href="mantenimientoProfesor.html">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Registrar
@@ -1015,7 +1015,7 @@
 								</ul>
 							</li>
 
-							<li class="active open">
+							<li class="">
 								<a href="#" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Cliente
@@ -1025,7 +1025,7 @@
 								<b class="arrow"></b>
 
 								<ul class="submenu">
-									<li class="active">
+									<li class="">
 										<a href="mantenimientoCliente.html">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Registrar
@@ -1046,7 +1046,7 @@
 							</li>
 							
 						</ul>
-					</li>
+					</li> 
                     <li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-file-o"></i>
@@ -1103,7 +1103,7 @@
 								<a href="#">Mantenimientos</a>
 							</li>
                             <li>
-								<a href="#">Cliente</a>
+								<a href="#">Profesor</a>
 							</li>
 							<li class="active">Registrar</li>
 						</ul><!-- /.breadcrumb -->
@@ -1185,10 +1185,10 @@
 								</div>--><!-- /.pull-left -->
 							<!--</div>--><!-- /.ace-settings-box -->
 						<!--</div>--><!-- /.ace-settings-container -->
-                        <!-- "sdsdsdsd" -->
+
 						<div class="page-header">
 							<h1>
-								Mantenimiento Cliente
+								Mantenimiento Profesor
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -1302,78 +1302,18 @@
 									</div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Nivel educativo</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Clínica Jurídica del Profesor</label>
 
 															<select class="col-sm-4" id="form-field-select-1">
 																<option value=""></option>
-																<option value="AL">Primaria</option>
-																<option value="AL">Secundaria</option>
-																<option value="AL">Superior</option>
+																<option value="AL">clinica 1</option>
+																<option value="AL">clinica 2</option>
+																<option value="AL">clinica 3</option>
+                                                                <option value="AL">clinica 4</option>
+                                                                
 															</select>
 										
 									</div>
-									
-									<div class="form-group">
-										
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">N&uacute;mero de hijos</label>
-										<div class="col-sm-9">
-											<input type="text" id="spinner3" />
-											<div class="space-6"></div>
-										</div>
-									</div>
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Ocupaci&oacute;n</label>
-
-										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="Ocupacion" />
-											<div class="space-2"></div>
-										</div>
-									</div>
-									
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Tel&eacute;fono</label>
-
-										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder="Telefono" />
-											<div class="space-2"></div>
-										</div>
-									</div>
-									
-									<div class="control-group">
-												<label class="col-sm-3 control-label no-padding-right" for="form-field-3">Población Vulnerable</label>
-
-												<div class="checkbox">
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Desplazado</span>
-													</label>
-													
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Menor de edad</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Anciano</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Discapacitado</span>
-													</label>
-													<label>
-														<input name="form-field-checkbox" type="checkbox" class="ace" />
-														<span class="lbl">Otros</span>
-													</label>
-												</div>
-											
-									</div>
-                                    <div class="space-6"></div>
-                                    <div class="space-6"></div>
-                                    <div class="space-6"></div>
-                                    <div class="space-6"></div>
-                                    <div class="space-6"></div>
                                     
                                     <div class="form-group">
 										
@@ -1392,12 +1332,39 @@
 											<div class="space-6"></div>
 										</div>
 									</div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
 									<div align="center">		
-									<button class="btn btn-info" type="button">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Registrar Cliente
-									</button>
-									</div>
+									
+                                    
+                                        <!-- form del boton -->
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#boton">Registrar Profesor</button>
+									<div class="modal fade" id="boton" role="dialog">
+										<div class="modal-dialog">
+										
+										  <!-- Modal content-->
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <h1 type="button" class="close" data-dismiss="modal">Se ha registrado correctamente al Profesor</h1>
+											</div>									
+											
+                                              <div class="modal-footer">
+											     <div align="center">
+                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+											     </div>
+                                            </div>
+										  </div>
+										  
+										</div>
+									 </div>
+                                        
+                                    <!-- fin del form -->
+                                        
+                                    </div>
+                                     
 									
 							</div>
 									</form>
@@ -1697,7 +1664,6 @@
 						$(this).addClass('dropup');
 					else $(this).removeClass('dropup');
 				});
-                
 			
 			})
 		</script>
