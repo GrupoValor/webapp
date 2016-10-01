@@ -457,7 +457,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="ta_notas.html">
+								<a href="ta_notas_busq.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Registro de notas
 								</a>
@@ -860,62 +860,7 @@
 							</li>
                         </ul>
                     </li>
-				    
-                     <li class=""> <!--Gestor de contenidos-->
-						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-cog"></i>
-							<span class="menu-text">
-                                <small>Gestor de contenidos</small>
-							</span>
-
-							<b class="arrow fa fa-angle-down"></b>
-						</a>
-
-						<b class="arrow"></b>
-
-						<ul class="submenu">
-                            <li class="">
-								<a href="#" class="dropdown-toggle">
-									<i class="menu-icon fa fa-caret-right"></i>
-
-									Noticias
-									<b class="arrow fa fa-angle-down"></b>
-								</a>
-
-								<b class="arrow"></b>
-
-								<ul class="submenu">
-									<li class="">
-										<a href="gestor_noticias_registro.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Registro
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="gestor_noticias_busqueda.html">
-											<i class="menu-icon fa fa-caret-right"></i>
-											Búsqueda
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-								</ul>
-							</li>
-
-                            <li class="">
-								<a href="gestor_eventos.html">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Eventos
-								</a>
-								<b class="arrow"></b>
-							</li>
-                        </ul>
-                    </li> <!--Gestor de contenido -->
-                
-                </ul><!-- /.nav-list -->
+				</ul><!-- /.nav-list -->
 
 				
 				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -949,15 +894,13 @@
 						<div class="">
 							Se mostrar&aacute;n 
 							<div class="ace-spinner middle" style="width: 115px;">
-								<div class="input-group">
-									<input type="text" id="spinner1" class="spinbox-input form-control text-center" />
-									<div class="spinbox-buttons input-group-btn btn-group-vertical">
-										<i class="icon-only  ace-icon fa fa-chevron-up"></i>
-										<i class="icon-only  ace-icon fa fa-chevron-down"></i>
-									</div>
-								</div>
+								<input type="text" id="spinner1" />
 							</div>
-							tablas.
+							tablas de r&uacute;bricas, para un total de 
+							<div class="ace-spinner middle" style="width: 90px;">
+								<input type="text" class="input-sm" id="spinner2" />
+							</div>
+							semanas.
 						</div>
 						
 						<div class="row">
@@ -1313,13 +1256,14 @@
 				}
 				
 				
-				/* SPINNER */
+				/* SPINNERS */
 				$('#spinner1').ace_spinner({value:2,min:1,max:20,step:1, btn_up_class:'btn-info' , btn_down_class:'btn-info'})
 				.closest('.ace-spinner')
 				.on('changed.fu.spinbox', function(){
 					//console.log($('#spinner1').val())
 				});
-				/* FIN SPINNER */
+				$('#spinner2').ace_spinner({value:14,min:1,max:30,step:1, btn_up_class:'btn-info' , btn_down_class:'btn-info'});
+				/* FIN SPINNERS */
 				
 				/***************/
 				$('.show-details-btn').on('click', function(e) {
