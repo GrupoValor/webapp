@@ -879,7 +879,39 @@
 								<section>
 									<div align="center">Reporte por Caso</div>
 									<div align="center">
-										Aqui va el grafico
+										<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+										  <script type="text/javascript">
+										    google.charts.load("current", {packages:['corechart']});
+										    google.charts.setOnLoadCallback(drawChart);
+										    function drawChart() {
+										      var data = google.visualization.arrayToDataTable([
+											["Element", "Density", { role: "style" } ],
+											["IDEN12", 30, "gold"],
+											["IDEN13", 35, "gold"],
+											["IDEN14", 37, "gold"],
+											["IDEN15", 21, "gold"]
+										      ]);
+
+										      var view = new google.visualization.DataView(data);
+										      view.setColumns([0, 1,
+												       { calc: "stringify",
+													 sourceColumn: 1,
+													 type: "string",
+													 role: "annotation" },
+												       2]);
+
+										      var options = {
+											title: "Resumen de casos Per&#237;odo 21/01/2016 - actualidad",
+											width: 600,
+											height: 400,
+											bar: {groupWidth: "95%"},
+											legend: { position: "none" },
+										      };
+										      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+										      chart.draw(view, options);
+										  }
+										  </script>
+										<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
 									</div>
 									<div align="left">Nota: Este cuadro solo contabiliza los casos terminados</div>
 									<div align="left">Promedio de tiempo: 42 d&#237;as</div>
