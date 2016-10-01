@@ -267,15 +267,29 @@
         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
           Suscribirse
         </button>
+        <label for="sel1">ESTADO:</label>
+          <select id="sel1">
+            <option>Activo</option>
+            <option>Cerrado</option>
+            <option>Abandono</option>
+          </select>
       </div>
 
 
 
       <div class="row">
         <div class="col-md-6" style="border-style: solid; border-width: 4px;">
+          <div>
+            <div class="row">
+              <h4 class="col-md-3">Consulta 1</h4>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3">
+                Objetivo
+              </button>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-5" id="kanban1"></div>
-            <div class="col-md-1"><button class="btn btn-default" type="submit">+ Etapa</button></div>
+            <div class="col-md-1"><button  class="btn btn-default" type="submit">+ Etapa</button></div>
           </div>
         </div>
         <div class="col-md-3">
@@ -297,7 +311,7 @@
             </div>
             <div class="row">
               <input type="text" name="FirstName" value="Inserte nombre">
-              <button type="button" class="btn btn-default" style="background-color:#84DE02">Agregar</button>
+              <button type="button" class="btn btn- default" style="background-color:#84DE02">Agregar</button>
             </div>
             <h4>Log de acciones</h4>
             <div id="log"></div>
@@ -349,6 +363,76 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Objetivos de la consulta</h4>
+        </div>
+        <div class="modal-body">
+          <h3>Detalles:</h3>
+          <textarea rows="4" cols="50">
+            Lo que se busca con esta consulta es ....
+          </textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4">
+    Detalle de tarea
+  </button>
+
+  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Detalles de la tarea XXX</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Detalles:</h4>
+          <textarea rows="4" cols="50">
+            Detalles de la tarea
+          </textarea>
+          <h4>Comentarios:</h4>
+          <h6>Usuario 1 comento:</h6>
+          <textarea rows="4" cols="50">
+            comentario
+          </textarea>
+          <h6>Usuario 2 comento:</h6>
+          <textarea rows="4" cols="50">
+            comentario
+          </textarea>
+          <div class="row">
+            <button type="button" class="btn btn-default">Registrar</button>
+            <textarea rows="4" cols="50">
+              comentario
+            </textarea>
+          </div>
+
+          <div>
+            <form action="../Intranet/mapa.html"><input type="submit" value="Registrar alerta"></form>
+            <h6>Fecha de vencimiento:</h6>
+            <input type="date" name="Fecha vencimiento">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
