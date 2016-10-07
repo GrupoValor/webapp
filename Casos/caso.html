@@ -8,7 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css"/>
     <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
     <script type="text/javascript" src="jqwidgets/jqxsortable.js"></script>
@@ -21,72 +21,76 @@
             height: 25px;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-            position:relative;
-            margin-top:0px;
+            position: relative;
+            margin-top: 0px;
             overflow: hidden;
             top: 0px;
         }
+
         .jqx-kanban-item {
             padding-top: 0px;
-            padding-bottom:0px;
+            padding-bottom: 0px;
         }
+
         .jqx-kanban-item-text {
             padding-top: 6px;
             padding-bottom: 6px;
         }
+
         .jqx-kanban-item-avatar {
             top: 9px;
         }
+
         .jqx-kanban-template-icon {
             position: absolute;
             right: 3px;
-            top:12px;
+            top: 12px;
         }
     </style>
     <script type="text/javascript">
         $(document).ready(function () {
             var fields = [
-                     { name: "id", type: "string" },
-                     { name: "status", map: "state", type: "string" },
-                     { name: "text", map: "label", type: "string" },
-                     { name: "tags", type: "string" },
-                     { name: "color", map: "hex", type: "string" },
-                     { name: "resourceId", type: "number" }
+                {name: "id", type: "string"},
+                {name: "status", map: "state", type: "string"},
+                {name: "text", map: "label", type: "string"},
+                {name: "tags", type: "string"},
+                {name: "color", map: "hex", type: "string"},
+                {name: "resourceId", type: "number"}
             ];
             var source =
-             {
-                 localData: [
-                          { id: "1161", state: "new", label: "Descripcion", hex: "#36c7d0", resourceId: 0 },
-                          { id: "1645", state: "work", label: "Descripcion", hex: "#ff7878", resourceId: 0 },
-                          { id: "9213", state: "new", label: "Descripcion", hex: "#96c443", resourceId: 2 },
-                          { id: "6546", state: "done", label: "Descripcion", hex: "#ff7878", resourceId: 1 },
-                          { id: "9034", state: "new", label: "Descripcion", hex: "#96c443", resourceId: 3 }
-                 ],
-                 dataType: "array",
-                 dataFields: fields
-             };
+            {
+                localData: [
+                    {id: "1161", state: "new", label: "Descripcion", hex: "#36c7d0", resourceId: 0},
+                    {id: "1645", state: "work", label: "Descripcion", hex: "#ff7878", resourceId: 0},
+                    {id: "9213", state: "new", label: "Descripcion", hex: "#96c443", resourceId: 2},
+                    {id: "6546", state: "done", label: "Descripcion", hex: "#ff7878", resourceId: 1},
+                    {id: "9034", state: "new", label: "Descripcion", hex: "#96c443", resourceId: 3}
+                ],
+                dataType: "array",
+                dataFields: fields
+            };
             var dataAdapter = new $.jqx.dataAdapter(source);
             var resourcesAdapterFunc = function () {
                 var resourcesSource =
                 {
                     localData: [
-                          { id: 0, name: "Tarea 1", image: "jqwidgets/styles/images/common.png", common: true },
-                          { id: 1, name: "Tarea 2", image: "images/andrew.png" },
-                          { id: 2, name: "Tarea 3", image: "images/janet.png" },
-                          { id: 3, name: "Tarea 4", image: "images/steven.png" },
-                          { id: 4, name: "Tarea 5", image: "images/nancy.png" },
-                          { id: 5, name: "Tarea 6", image: "images/Michael.png" },
-                          { id: 6, name: "Tarea 7", image: "images/margaret.png" },
-                          { id: 7, name: "Tarea 8", image: "images/robert.png" },
-                          { id: 8, name: "Tarea 9", image: "images/Laura.png" },
-                          { id: 9, name: "", image: "images/Anne.png" }
+                        {id: 0, name: "Tarea 1", image: "jqwidgets/styles/images/common.png", common: true},
+                        {id: 1, name: "Tarea 2", image: "images/andrew.png"},
+                        {id: 2, name: "Tarea 3", image: "images/janet.png"},
+                        {id: 3, name: "Tarea 4", image: "images/steven.png"},
+                        {id: 4, name: "Tarea 5", image: "images/nancy.png"},
+                        {id: 5, name: "Tarea 6", image: "images/Michael.png"},
+                        {id: 6, name: "Tarea 7", image: "images/margaret.png"},
+                        {id: 7, name: "Tarea 8", image: "images/robert.png"},
+                        {id: 8, name: "Tarea 9", image: "images/Laura.png"},
+                        {id: 9, name: "", image: "images/Anne.png"}
                     ],
                     dataType: "array",
                     dataFields: [
-                         { name: "id", type: "number" },
-                         { name: "name", type: "string" },
-                         { name: "image", type: "string" },
-                         { name: "common", type: "boolean" }
+                        {name: "id", type: "number"},
+                        {name: "name", type: "string"},
+                        {name: "image", type: "string"},
+                        {name: "common", type: "boolean"}
                     ]
                 };
                 var resourcesDataAdapter = new $.jqx.dataAdapter(resourcesSource);
@@ -124,11 +128,11 @@
             }
             $('#kanban1').jqxKanban({
                 template: "<div class='jqx-kanban-item' id=''>"
-                        + "<div class='jqx-kanban-item-color-status'></div>"
-                        + "<div style='display: none;' class='jqx-kanban-item-avatar'></div>"
-                        + "<div class='jqx-icon jqx-icon-close jqx-kanban-item-template-content jqx-kanban-template-icon'></div>"
-                        + "<div class='jqx-kanban-item-text'></div>"
-                        + "<div style='display: none;' class='jqx-kanban-item-footer'></div>"
+                + "<div class='jqx-kanban-item-color-status'></div>"
+                + "<div style='display: none;' class='jqx-kanban-item-avatar'></div>"
+                + "<div class='jqx-icon jqx-icon-close jqx-kanban-item-template-content jqx-kanban-template-icon'></div>"
+                + "<div class='jqx-kanban-item-text'></div>"
+                + "<div style='display: none;' class='jqx-kanban-item-footer'></div>"
                 + "</div>",
                 resources: resourcesAdapterFunc(),
                 source: dataAdapter,
@@ -186,9 +190,9 @@
                     });
                 },
                 columns: [
-                    { text: "Etapa 1", iconClassName: getIconClassName(), dataField: "new", maxItems: 20},
-                    { text: "Etapa 2", iconClassName: getIconClassName(), dataField: "work", maxItems: 20 },
-                    { text: "Etapa 3", iconClassName: getIconClassName(), dataField: "done", maxItems: 20 }
+                    {text: "Etapa 1", iconClassName: getIconClassName(), dataField: "new", maxItems: 20},
+                    {text: "Etapa 2", iconClassName: getIconClassName(), dataField: "work", maxItems: 20},
+                    {text: "Etapa 3", iconClassName: getIconClassName(), dataField: "done", maxItems: 20}
                 ],
                 // render column headers.
                 columnRenderer: function (element, collapsedElement, column) {
@@ -228,7 +232,13 @@
                     args.cancelToggle = true;
                     if (!args.column.collapsed) {
                         var colors = ['#f19b60', '#5dc3f0', '#6bbd49', '#dddddd']
-                        $('#kanban1').jqxKanban('addItem', { status: args.column.dataField, text: "<textarea placeholder='(No Title)' style='width: 96%; margin-top:2px; border-radius: 3px; border:none; line-height:20px; height: 50px;' class='jqx-input' id='newItem" + itemIndex + "' value=''></textarea>", tags: "new task", color: colors[Math.floor(Math.random() * 4)], resourceId: 9 });
+                        $('#kanban1').jqxKanban('addItem', {
+                            status: args.column.dataField,
+                            text: "<textarea placeholder='(No Title)' style='width: 96%; margin-top:2px; border-radius: 3px; border:none; line-height:20px; height: 50px;' class='jqx-input' id='newItem" + itemIndex + "' value=''></textarea>",
+                            tags: "new task",
+                            color: colors[Math.floor(Math.random() * 4)],
+                            resourceId: 9
+                        });
                         var input = $("#newItem" + itemIndex);
                         input.mousedown(function (event) {
                             event.stopPropagation();
@@ -255,185 +265,190 @@
     <script src="js/bootstrap.min.js"></script>
 
 
-
 </head>
 <body style="background-color:	#F2F0E6">
-  <div class="row">
+<div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-          CASO XXX-XXX
-        </button>
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
-          Suscribirse
-        </button>
-        <label for="sel1">ESTADO:</label>
-          <select id="sel1">
-            <option>Activo</option>
-            <option>Cerrado</option>
-            <option>Abandono</option>
-          </select>
-      </div>
+        <div class="row">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                CASO XXX-XXX
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+                Suscribirse
+            </button>
+            <label for="sel1">ESTADO:</label>
+            <select id="sel1">
+                <option>Registrado</option>
+                <option>Activo</option>
+                <option>En seguimiento</option>
+                <option>Inactivo</option>
+                <option>Abandono</option>
+                <option>Cerrado</option>
+            </select>
+        </div>
 
 
-
-      <div class="row">
-        <div class="col-md-6" style="border-style: solid; border-width: 4px;">
-          <div>
-            <div class="row">
-              <h4 class="col-md-3">Consulta 1</h4>
-              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3">
-                Objetivo
-              </button>
+        <div class="row">
+            <div class="col-md-6" style="border-style: solid; border-width: 4px;">
+                <div>
+                    <div class="row">
+                        <h4 class="col-md-3">Consulta 1</h4>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3">
+                            Objetivo
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5" id="kanban1"></div>
+                    <div class="col-md-1">
+                        <button class="btn btn-default" type="submit">+ Etapa</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5" id="kanban1"></div>
-            <div class="col-md-1"><button  class="btn btn-default" type="submit">+ Etapa</button></div>
-          </div>
+            <div class="col-md-3">
+                <div>
+                    <h4>Alumnos responsables</h4>
+                    <div class="row">
+                        <button type="button" class="btn btn-default">Ysrael</button>
+                        <button type="button" class="btn btn-default">Alvaro</button>
+                        <button type="button" class="btn btn-default">Karina</button>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="FirstName" value="Inserte nombre">
+                        <button type="button" class="btn btn-default" style="background-color:#84DE02">Agregar</button>
+                    </div>
+                    <h4>Supervisores</h4>
+                    <div class="row">
+                        <button type="button" class="btn btn-default">JP1</button>
+                        <button type="button" class="btn btn-default">Profesor1</button>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="FirstName" value="Inserte nombre">
+                        <button type="button" class="btn btn- default" style="background-color:#84DE02">Agregar</button>
+                    </div>
+                    <h4>Log de acciones</h4>
+                    <div id="log"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <div>
-            <h4>Alumnos responsables</h4>
-            <div class="row">
-              <button type="button" class="btn btn-default">Ysrael</button>
-              <button type="button" class="btn btn-default">Alvaro</button>
-              <button type="button" class="btn btn-default">Karina</button>
-            </div>
-            <div class="row">
-              <input type="text" name="FirstName" value="Inserte nombre">
-              <button type="button" class="btn btn-default" style="background-color:#84DE02">Agregar</button>
-            </div>
-            <h4>Supervisores</h4>
-            <div class="row">
-              <button type="button" class="btn btn-default">JP1</button>
-              <button type="button" class="btn btn-default">Profesor1</button>
-            </div>
-            <div class="row">
-              <input type="text" name="FirstName" value="Inserte nombre">
-              <button type="button" class="btn btn- default" style="background-color:#84DE02">Agregar</button>
-            </div>
-            <h4>Log de acciones</h4>
-            <div id="log"></div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="row">
+    </div>
+    <div class="row">
         <div class="col-md-8">
-          <button class="btn btn-default" type="submit">Agregar Consulta</button>
+            <button class="btn btn-default" type="submit">Agregar Consulta</button>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+</div>
 
 
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabe1">Caso XXX-XXX</h4>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabe1">Caso XXX-XXX</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Detalles del caso:</h3>
+                <p>Esta caso trata de ...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-body">
-          <h3>Detalles del caso:</h3>
-          <p>Esta caso trata de ...</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
 
-  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Suscrito</h4>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Suscrito</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Objetivos de la consulta</h4>
-        </div>
-        <div class="modal-body">
-          <h3>Detalles:</h3>
-          <textarea rows="4" cols="50">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Objetivos de la consulta</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Detalles:</h3>
+                <textarea rows="4" cols="50">
             Lo que se busca con esta consulta es ....
           </textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4">
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4">
     Detalle de tarea
-  </button>
+</button>
 
-  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Detalles de la tarea XXX</h4>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Detalles de la tarea XXX</h4>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <ul>
+                        <label class="col-sm-3 control-label no-padding-right">Detalles:</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="row"><label class="col-sm-3 control-label no-padding-right">Comentarios:</label>
+                        </div>
+                        <label class="col-sm-3 control-label no-padding-right">Usuario1 comento:</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="2"></textarea>
+                        </div>
+                        <label class="col-sm-3 control-label no-padding-right">Usuario2 comento:</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="2"></textarea>
+                        </div>
+                        <div class="row"><label class="col-sm-3 control-label no-padding-right">Registrar:</label></div>
+                        <label class="col-sm-3 control-label no-padding-right">Comentario:</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="2"></textarea>
+                        </div>
+                        <label class="col-sm-3 control-label no-padding-right">Fecha de vencimiento:</label>
+                        <div class="col-sm-9">
+                            <input type="date" name="Fecha vencimiento">
+                            <form action="../Intranet/mapa.html"><input type="submit" value="Registrar alerta"></form>
+                        </div>
+                        <div class="row"></div>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
         </div>
-        <div class="modal-body">
-          <form action="#">
-            <ul>
-              <label class="col-sm-3 control-label no-padding-right">Detalles:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" rows="4"></textarea>
-              </div>
-              <div class="row"><label class="col-sm-3 control-label no-padding-right">Comentarios:</label></div>
-              <label class="col-sm-3 control-label no-padding-right">Usuario1 comento:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" rows="2"></textarea>
-              </div>
-              <label class="col-sm-3 control-label no-padding-right">Usuario2 comento:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" rows="2"></textarea>
-              </div>
-              <div class="row"><label class="col-sm-3 control-label no-padding-right">Registrar:</label></div>
-              <label class="col-sm-3 control-label no-padding-right">Comentario:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" rows="2"></textarea>
-              </div>
-              <label class="col-sm-3 control-label no-padding-right">Fecha de vencimiento:</label>
-              <div class="col-sm-9">
-                <input type="date" name="Fecha vencimiento">
-                <form action="../Intranet/mapa.html"><input type="submit" value="Registrar alerta"></form>
-              </div>
-              <div class="row"></div>
-            </ul>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
-
+</div>
 
 
 </body>
