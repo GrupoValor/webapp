@@ -259,7 +259,16 @@ partir [&hellip;]" />
 	            map.fitBounds(bounds);
 	            });
 	            // [END region_getplaces]
-	            }
+			
+ 		    var lugar = {lat: -10.5049722, lng: -77.0641579};
+		    var markerPin = new google.maps.Marker({
+		    	position: lugar,
+		    	map: map,
+		    	title: 'lugar'
+		    });
+		    markerPin = addListener('click', function(){popmeup('pop-up-clinica.htm');});
+		    }
+		
 	        </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO7aiKlHKsT7Kd4m-w-wjqVU0vX_J2gg0&libraries=places&callback=initAutocomplete" async defer>
                 </script>
