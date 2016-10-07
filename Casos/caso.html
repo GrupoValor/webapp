@@ -336,7 +336,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Caso XXX-XXX</h4>
+          <h4 class="modal-title" id="myModalLabe1">Caso XXX-XXX</h4>
         </div>
         <div class="modal-body">
           <h3>Detalles del caso:</h3>
@@ -397,32 +397,34 @@
           <h4 class="modal-title" id="myModalLabel">Detalles de la tarea XXX</h4>
         </div>
         <div class="modal-body">
-          <h4>Detalles:</h4>
-          <textarea rows="4" cols="50">
-            Detalles de la tarea
-          </textarea>
-          <h4>Comentarios:</h4>
-          <h6>Usuario 1 comento:</h6>
-          <textarea rows="4" cols="50">
-            comentario
-          </textarea>
-          <h6>Usuario 2 comento:</h6>
-          <textarea rows="4" cols="50">
-            comentario
-          </textarea>
-          <div class="row">
-            <button type="button" class="btn btn-default">Registrar</button>
-            <textarea rows="4" cols="50">
-              comentario
-            </textarea>
-          </div>
-
-          <div>
-            <form action="../Intranet/mapa.html"><input type="submit" value="Registrar alerta"></form>
-            <h6>Fecha de vencimiento:</h6>
-            <input type="date" name="Fecha vencimiento">
-          </div>
-
+          <form action="#">
+            <ul>
+              <label class="col-sm-3 control-label no-padding-right">Detalles:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+              <div class="row"><label class="col-sm-3 control-label no-padding-right">Comentarios:</label></div>
+              <label class="col-sm-3 control-label no-padding-right">Usuario1 comento:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="2"></textarea>
+              </div>
+              <label class="col-sm-3 control-label no-padding-right">Usuario2 comento:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="2"></textarea>
+              </div>
+              <div class="row"><label class="col-sm-3 control-label no-padding-right">Registrar:</label></div>
+              <label class="col-sm-3 control-label no-padding-right">Comentario:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" rows="2"></textarea>
+              </div>
+              <label class="col-sm-3 control-label no-padding-right">Fecha de vencimiento:</label>
+              <div class="col-sm-9">
+                <input type="date" name="Fecha vencimiento">
+                <form action="../Intranet/mapa.html"><input type="submit" value="Registrar alerta"></form>
+              </div>
+              <div class="row"></div>
+            </ul>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
