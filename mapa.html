@@ -66,7 +66,7 @@ partir [&hellip;]" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="http://www.pucp.edu.pe/wp-content/themes/home-theme/images/favicons/mstile-144x144.png">
 
-
+    <script type="text/javascript" src="pop-up.js"></script> 
 </head>
     
 <body class="single single-carrera postid-1478">
@@ -187,7 +187,9 @@ partir [&hellip;]" />
                 <div class="row cuerpo-interna">
                     <div class="col-md-12">
                         <div class="formato">
-                            <p>Leyenda:</p>
+                            <p>Se pondrá una breve descripción del objtivo del mapa de alertas, con un mensaje hacia las personas que quiera colaborar.</p>
+				<p></p>
+			    <p>Leyenda:</p>
 			    <p>Pin rojo: Documento sin colaborar</p>
 			    <p>Pin amarillo: Documento en seguimiento</p>
 			    <p>Pin verde: Documento recogido</p>
@@ -259,7 +261,16 @@ partir [&hellip;]" />
 	            map.fitBounds(bounds);
 	            });
 	            // [END region_getplaces]
-	            }
+			
+ 		    var lugar = {lat: -10.5049722, lng: -77.0641579};
+		    var markerPin = new google.maps.Marker({
+		    	position: lugar,
+		    	map: map,
+		    	title: 'lugar'
+		    });
+		    markerPin.addListener('click', function(){popmeup('pop-up-mapa.htm');});
+		    }
+		
 	        </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO7aiKlHKsT7Kd4m-w-wjqVU0vX_J2gg0&libraries=places&callback=initAutocomplete" async defer>
                 </script>
@@ -268,6 +279,7 @@ partir [&hellip;]" />
             </tr>
             <tr>
               <td>
+		      <!--
                 <table width="99%">
                   <tbody>
                     <tr>
@@ -300,21 +312,26 @@ partir [&hellip;]" />
                     </tr>
                   </tbody>
                 </table>
+-->
               </td>
             </tr>            
             <tr> 
-              <td width="100%" align="center" colspan="3">
+ <!--             <td width="100%" align="center" colspan="3">
 		<script type="text/javascript" src="pop-up.js"></script> 
 		<button class="webButton webButtonColaborar" onclick="alert('!!!Gracias por colaborar con la cl&#237;nica!!!\nDocumento: Partida de Nacimiento\nPaciente: Alejo Carmio Pinto\nFecha L&#237;mite: 15/11/2016')";" type="button">Colaborar</button>
 	      </td>
+-->
             </tr>
             <tr>
 		<td>
 		</td>
 	    </tr>   
-	  </body>
+	  </tbody>
 	</table>
-	
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
      
 </section>
 
