@@ -914,12 +914,17 @@
 								<h3 class="header smaller lighter blue">
 									R&uacute;brica 1:
 									<input type="text" class="input-xxlarge" value="Participaci&oacute;n" />
-									<div class="form-group" style="float:right">
-										<label>Peso de la r&uacute;brica:</label>
-										<input type="text" class="input-mini" value="1" />
-										<label>de 2 (50%)</label>  
-									</div>
 								</h3>
+								
+								<div class="form-group" style="float:right">
+									<label>Peso de la r&uacute;brica:</label>
+									<input type="text" class="input-mini" value="1" />
+									<label>de </label>
+									<input type="text" disabled="true" class="input-mini" value="2" />
+									<label>(</label>
+									<input type="text" disabled="true" class="input-mini" value="50%" />
+									<label>)</label>  
+								</div>
 								
 								<div class="row">
 									<div class="col-xs-12">
@@ -995,13 +1000,18 @@
 								<h3 class="header smaller lighter blue">
 									R&uacute;brica 2:
 									<input type="text" class="input-xxlarge" value="Seguimiento de casos" />
-									<div class="form-group" style="float:right">
-										<label>Peso de la r&uacute;brica:</label>
-										<input type="text" class="input-mini" value="1" />
-										<label>de 2 (50%)</label>
-									</div>
 								</h3>
 								
+								<div class="form-group" style="float:right">
+									<label>Peso de la r&uacute;brica:</label>
+									<input type="text" class="input-mini" value="1" />
+									<label>de </label>
+									<input type="text" disabled="true" class="input-mini" value="2" />
+									<label>(</label>
+									<input type="text" disabled="true" class="input-mini" value="50%" />
+									<label>)</label>
+								</div>
+									
 								<div class="row">
 									<div class="col-xs-12">
 										<table id="simple-table" class="table  table-bordered table-hover">
@@ -1129,6 +1139,13 @@
 										<i class="ace-icon fa fa-check bigger-110"></i>
 										Guardar
 									</button>
+									&nbsp;
+									<a href="ta_notas_busq.html">
+										<button class="btn" type="reset">
+											<i class="ace-icon fa fa-undo bigger-110"></i>
+											Regresar
+										</button>
+									</a>
 								</div>
 								
 								<!-- PAGE CONTENT ENDS -->
