@@ -330,6 +330,50 @@
                     <div id="log"></div>
                     <div class="row"></div>
                     <h4>Documentos del caso</h4>
+                    <div class="row"></div>
+                    <h4>Alertas de pedido del caso</h4>
+                    <div class="row">
+                        <h5>Alerta 1</h5>
+                        <button type="button" class="btn btn- default" style="background-color: #84DE02" data-toggle="modal" data-target="#myModal112">Detalle</button>
+                        <div class="modal fade" id="myModal112" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabe2">Detalles de la alerta</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <ul>
+                                                <div class="row">
+                                                    <label class="col-sm-3 control-label no-padding-right">Detalles:</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <label class="col-sm-3 control-label no-padding-right">Estado:</label>
+                                                    <select id="sel2">
+                                                        <option>Registrada</option>
+                                                        <option>En espera</option>
+                                                        <option>Vencida</option>
+                                                        <option>Finalizada</option>
+                                                    </select>
+                                                </div>
+                                                <div class="row"></div>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
