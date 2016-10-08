@@ -1,6 +1,24 @@
+<?php 
+require "data/class_sql_manager.php";
+$sql_manager = new SqlManager();
+if($sql_manager->is_conected()){
+
+ //$sql_manager->query = "select * from TA_NOTICIA ;" ;
+ //$sql_manager->ejecutar_result();
+ echo "Conectado";
+    
+}
+else
+    echo "error";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
     <title>Intranet | Registro de casos | Búsqueda</title>
@@ -927,7 +945,7 @@
 									</li>
 
 									<li class="active">
-										<a href="gestor_noticias_busqueda.html">
+										<a href="gestor_noticias_busqueda.php">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Búsqueda
 										</a>
@@ -1020,258 +1038,22 @@
                                             <th class="hidden"></th>
                                                 <th>Título</th>
 												<th>Autor</th>
-                                                <th class="hidden">Tipo caso</th>
+                                              
                                                 <th>Fecha Publicación</th>
-												<th class="hidden">Fecha Fin</th>
+												
 												<th>Estado</th>
                                                 <th>Modificación</th>
                                         </tr>
                                         </thead>
 
                                         <tbody>
-                                        <tr>
-                                            <td class="hidden">
-                                            </td>
-                                            <td>a1512</td>
-								            <td>Juan Perez</td>
-											<td class="hidden">Caso 1</td>
-											<td>15/05/2015</td>
-											<td class="hidden">15/07/2015</td>
-											<td>En Panel</td>
-
-                                            <!--<td class="hidden-480"> San Miguel</td>-->
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                    
-                                                    <a class="green" href="gestor_noticias_registro.html">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                          
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>b1577</td>
-											<td>Nei Cahuantico</td>
-											<td class="hidden" >caso 2</td>
-											<td class="hidden">16/05/2015</td>
-											<td>17/07/2015</td>
-											<td >En Panel</td>
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                   
-                                                    <a class="green" href="gestor_noticias_registro.html">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>a1512</td>
-											<td>Jaspar Cornio</td>
-											<td class="hidden">Caso 3</td>
-											<td class="hidden">17/05/2015</td>
-											<td>17/07/2015</td>
-											<td >No está en panel</td>
-
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                    <!--<a class="blue" href="#">
-                                                        <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                                                    </a>-->
-
-                                                    <a class="green" href="gestor_noticias_registro.html">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
                                         
-
-                                        <tr>
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>c1512</td>
-                                            <td>Juanjo Salas</td>
-                                            <td class="hidden">Caso 4</td>
-                                            <td class="hidden">17/08/2015</td>
-											<td>17/09/2015</td>
-											<td>No está en panel</td>
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                  
-                                                    <a class="green" href="gestor_noticias_registro.html">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                            
-                                            
-                                            
-                                           
-                                            
                                             <tr>
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>a1512</td>
-								            <td>Juan Perez</td>
-											<td class="hidden">Caso 5</td>
-											<td class="hidden">15/05/2015</td>
-											<td>15/07/2015</td>
-											<td>En Panel</td>
+                                
+                                            <td><?php echo "Noticia 1" ?></td>
+								            <td><?php echo "Juan Perez" ?></td>
+											<td><?php echo "15/07/2015" ?></td>
+											<td><?php echo "En el panel" ?></td>
 
                                             <!--<td class="hidden-480"> San Miguel</td>-->
 
@@ -1297,299 +1079,6 @@
                                                         <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
                                                           
 
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>b1577</td>
-											<td>Nei Cahuantico</td>
-											<td class="hidden" >Caso 6</td>
-											<td class="hidden">16/05/2015</td>
-											<td>17/07/2015</td>
-											<td>En Panel</td>
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                   
-                                                    <a class="green" href="gestor_noticias_registro.html">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                             <tr class="hidden">
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>a1512</td>
-											<td>Jaspar Cornio</td>
-											<td >Caso 10</td>
-											<td>17/05/2015</td>
-											<td>17/07/2015</td>
-											<td>En seguimiento</td>
-
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                    <!--<a class="blue" href="#">
-                                                        <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                                                    </a>-->
-
-                                                    <a class="green" href="#">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        
-
-                                        <tr class="hidden">
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>c1512</td>
-                                            <td>Juanjo Salas</td>
-                                            <td>Caso 9</td>
-                                            <td>17/08/2015</td>
-											<td>17/09/2015</td>
-											<td>Cerrado</td>
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                  
-                                                    <a class="green" href="#">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                            
-                                            
-                                            
-                                           
-                                            
-                                            <tr class="hidden">
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>a1512</td>
-								            <td>Juan Perez</td>
-											<td >Caso 8</td>
-											<td>15/05/2015</td>
-											<td>15/07/2015</td>
-											<td>Cerrado</td>
-
-                                            <!--<td class="hidden-480"> San Miguel</td>-->
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                    
-                                                    <a class="green" href="#">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                          
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-success" data-rel="tooltip"
-                                                                   title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="#" class="tooltip-error" data-rel="tooltip"
-                                                                   title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="hidden">
-                                            <td class="hidden">
-                                            </td>
-
-                                            <td>b1577</td>
-											<td>Nei Cahuantico</td>
-											<td >Caso 7</td>
-											<td>16/05/2015</td>
-											<td>17/07/2015</td>
-											<td>En seguimiento</td>
-
-                                            <td class="">
-                                                <div class="hidden-sm hidden-xs action-buttons">
-                                                   
-                                                    <a class="green" href="#">
-                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
-                                                    </a>
-
-                                                    <a class="red" href="#">
-                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="hidden-md hidden-lg">
-                                                    <div class="inline pos-rel">
-                                                        <button class="btn btn-minier btn-yellow dropdown-toggle"
-                                                                data-toggle="dropdown" data-position="auto">
-                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-                                                        </button>
-
-                                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                                            
                                                             <li>
                                                                 <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                    title="Edit">
@@ -1755,7 +1244,9 @@
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
     </a>
-</div><!-- /.main-container -->
+
+    
+    <!-- /.main-container -->
 
 <!-- basic scripts -->
 
