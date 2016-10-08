@@ -14,6 +14,7 @@
 
 		<!-- page specific plugin styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
         
         <link rel="stylesheet" href="assets/css/index.css" />
 
@@ -404,7 +405,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Principal </span>
@@ -925,7 +926,7 @@
 						</ul>
 					</li>
 
-                    			<li class="">
+                    <li class="">
 						<a href="mapa.html">
 							<i class="menu-icon fa fa-map-marker"></i>
 							<span class="menu-text"> Mapa </span>
@@ -933,7 +934,8 @@
 
 						<b class="arrow"></b>
 					</li>
-					<li class="">
+					
+                    <li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
@@ -1046,7 +1048,7 @@
 								<b class="arrow"></b>
 
 								<ul class="submenu">
-									<li class="">
+									<li class="active">
 										<a href="mantenimientoCliente.html">
 											<i class="menu-icon fa fa-caret-right"></i>
 											Registrar
@@ -1064,8 +1066,7 @@
 										<b class="arrow"></b>
 									</li>
 								</ul>
-							</li>
-							<li class="">
+                                <li class="active open">
 								<a href="#" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Clinicas
@@ -1094,8 +1095,10 @@
 									</li>
 								</ul>
 							</li>
+							
+							
 						</ul>
-					</li> 
+					</li>
                     <li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-file-o"></i>
@@ -1132,8 +1135,7 @@
 							</li>
                         </ul>
                     </li>
-				
-                     <li class=""> <!--Gestor de contenidos-->
+					<li class=""> <!--Gestor de contenidos-->
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cog"></i>
 							<span class="menu-text">
@@ -1186,8 +1188,7 @@
 							</li>
                         </ul>
                     </li> <!--Gestor de contenido -->
-                
-                </ul><!-- /.nav-list -->
+				</ul><!-- /.nav-list -->
 
 				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
 					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
@@ -1202,7 +1203,14 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Principal</li>
+
+							<li>
+								<a href="#">Mantenimientos</a>
+							</li>
+                            <li>
+								<a href="#">Clínica</a>
+							</li>
+							<li class="active">Modificar</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!--<div class="nav-search" id="nav-search">
@@ -1262,7 +1270,7 @@
 											<b>.container</b>
 										</label>
 									</div>
-								</div>--><!-- /.pull-left -->
+								</div><!-- /.pull-left -->
 
 								<!--<div class="pull-left width-50">
 									<div class="ace-settings-item">
@@ -1282,171 +1290,55 @@
 								</div>--><!-- /.pull-left -->
 							<!--</div>--><!-- /.ace-settings-box -->
 						<!--</div>--><!-- /.ace-settings-container -->
-
+                        <!-- "sdsdsdsd" -->
 						<div class="page-header">
 							<h1>
-								Principal
-								<!--<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									overview &amp; stats
-								</small>-->
+								Mantenimiento Clínica
 							</h1>
 						</div><!-- /.page-header -->
 
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<div class="alert alert-block alert-danger">
-									<button type="button" class="close" data-dismiss="alert">
-										<i class="ace-icon fa fa-times"></i>
-									</button>
-
-
-									Bienvenido,
-									<strong class="red">
-										tiene tareas pendientes
-									</strong>
-								</div>
-
-								<div class="row"> <!-- widgets de tareas pendientes-->
+								<form class="form-horizontal" role="form">
+									<div class="text-center">
+										<label class="col-sm- control-label no-padding-right" for="form-field-4">Clinicas</label>
+                                        </div>
+                                            
+                                    <div class="text-center">
+                                        <select class="select2" id="form-field-select-1" data-placeholder="Click para elegir...">
+													<option value=""></option>
+													<option value="AL">Clinica 1</option>
+												    <option value="AK">Clinica 2</option>
+												    <option value="AZ">Clinica 3</option>
+												    <option value="AR">Clinica 4</option>
+												    
+												</select>
+									   	
+									</div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
+                                    <div class="space-6"></div>
                                     
-                                    <div class="col-sm-6 widget-container-col" id="widget-container-col-12">
-											<div class="widget-box transparent" id="widget-box-12">
-												<div class="widget-header">
-													<a href="../Casos/caso.html">
-                                                    <h5 class="widget-title lighter"><strong>Actividad Semana 8</strong><small> vence el 12 de noviembre del 2016</small> </a> </h5>
-                                                    
-
-													<div class="widget-toolbar no-border">
-														<a href="#" data-action="collapse">
-															<i class="ace-icon fa fa-chevron-up"></i>
-														</a>
-
-														<a href="#" data-action="close">
-															<i class="ace-icon fa fa-times"></i>
-														</a>
-													</div>
-												</div>
-
-												<div class="widget-body">
-													<div class="widget-main padding-6 no-padding-left no-padding-right" align="justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-													</div>
-												</div>
-											</div>
-										</div>
+                                    <div class="text-center">
+										<a  href="plantillaClinica.html">
+                                        <button type="button" id="boton" class="btn btn-info">
+                                            <i class="ace-icon fa fa-check bigger-110"></i>Buscar</button>
+                                        </a>
+									</div>  
                                     
-                                    <div class="col-sm-6 widget-container-col" id="widget-container-col-12">
-											<div class="widget-box transparent" id="widget-box-12">
-												<div class="widget-header">
-                                                    <h5 class="widget-title lighter"><strong>Actividad Semana 9</strong><small> vence el 12 de noviembre del 2016</small></h5>
-                                                    
-
-													<div class="widget-toolbar no-border">
-														<a href="#" data-action="collapse">
-															<i class="ace-icon fa fa-chevron-up"></i>
-														</a>
-
-														<a href="#" data-action="close">
-															<i class="ace-icon fa fa-times"></i>
-														</a>
-													</div>
-												</div>
-
-												<div class="widget-body">
-													<div class="widget-main padding-6 no-padding-left no-padding-right" align="justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-													</div>
-												</div>
-											</div>
-										</div>
-                                    
-                                    <div class="col-sm-6 widget-container-col" id="widget-container-col-12">
-											<div class="widget-box transparent" id="widget-box-12">
-												<div class="widget-header">
-                                                    <h5 class="widget-title lighter"><strong>Actividad Semana 8</strong><small> vence el 12 de noviembre del 2016</small></h5>
-                                                    
-
-													<div class="widget-toolbar no-border">
-														<a href="#" data-action="collapse">
-															<i class="ace-icon fa fa-chevron-up"></i>
-														</a>
-
-														<a href="#" data-action="close">
-															<i class="ace-icon fa fa-times"></i>
-														</a>
-													</div>
-												</div>
-
-												<div class="widget-body">
-													<div class="widget-main padding-6 no-padding-left no-padding-right" align="justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-													</div>
-												</div>
-											</div>
-										</div>
-                                    
-                                    <div class="col-sm-6 widget-container-col" id="widget-container-col-12">
-											<div class="widget-box transparent" id="widget-box-12">
-												<div class="widget-header">
-                                                    <h5 class="widget-title lighter"><strong>Actividad Semana 8</strong><small> vence el 12 de noviembre del 2016</small></h5>
-                                                    
-
-													<div class="widget-toolbar no-border">
-														<a href="#" data-action="collapse">
-															<i class="ace-icon fa fa-chevron-up"></i>
-														</a>
-
-														<a href="#" data-action="close">
-															<i class="ace-icon fa fa-times"></i>
-														</a>
-													</div>
-												</div>
-
-												<div class="widget-body">
-													<div class="widget-main padding-6 no-padding-left no-padding-right" align="justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-													</div>
-												</div>
-											</div>
-										</div>
-                                    
-                                    <div class="col-sm-6 widget-container-col" id="widget-container-col-12">
-											<div class="widget-box transparent" id="widget-box-12">
-												<div class="widget-header">
-                                                    <h5 class="widget-title lighter"><strong>Actividad Semana 8</strong><small> vence el 12 de noviembre del 2016</small></h5>
-                                                    
-
-													<div class="widget-toolbar no-border">
-														<a href="#" data-action="collapse">
-															<i class="ace-icon fa fa-chevron-up"></i>
-														</a>
-
-														<a href="#" data-action="close">
-															<i class="ace-icon fa fa-times"></i>
-														</a>
-													</div>
-												</div>
-
-												<div class="widget-body">
-													<div class="widget-main padding-6 no-padding-left no-padding-right" align="justify">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-													</div>
-												</div>
-											</div>
-										</div>
-
-									
-									
-								</div><!-- /.row -->
-								
-								
-								<!-- PAGE CONTENT ENDS -->
+                                    </div>
+									</form>
+							</div><!-- /.col -->
 							</div><!-- /.col -->
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div>
-			</div><!-- /.main-content -->
 
 			<div class="footer">
 				<div class="footer-inner">
@@ -1501,6 +1393,7 @@
 		<![endif]-->
 		<script src="assets/js/jquery-ui.custom.min.js"></script>
 		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+        <script src="assets/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/jquery.easypiechart.min.js"></script>
 		<script src="assets/js/jquery.sparkline.index.min.js"></script>
 		<script src="assets/js/jquery.flot.min.js"></script>
@@ -1514,7 +1407,18 @@
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($) {
-				$('.easy-pie-chart.percentage').each(function(){
+				//datepicker plugin
+				//link
+				$('.date-picker').datepicker({
+					autoclose: true,
+					todayHighlight: true
+				})
+				//show datepicker when clicking on the icon
+				.next().on(ace.click_event, function(){
+					$(this).prev().focus();
+				});
+                
+                $('.easy-pie-chart.percentage').each(function(){
 					var $box = $(this).closest('.infobox');
 					var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
 					var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
@@ -1727,6 +1631,7 @@
 						$(this).addClass('dropup');
 					else $(this).removeClass('dropup');
 				});
+                
 			
 			})
 		</script>
