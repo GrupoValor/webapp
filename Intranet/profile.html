@@ -14,9 +14,7 @@
 
 	<!-- page specific plugin styles -->
 	<link rel="stylesheet" href="./assets/css/jquery-ui.custom.min.css" />
-	<link rel="stylesheet" href="./assets/css/jquery.gritter.min.css" />
-	<link rel="stylesheet" href="./assets/css/select2.min.css" />
-	<link rel="stylesheet" href="./assets/css/bootstrap-datepicker3.min.css" />
+	<link rel="stylesheet" href="./assets/css/jquery.gritter.min.css" />	
 	<link rel="stylesheet" href="./assets/css/bootstrap-editable.min.css" />
 	<link rel="stylesheet" href="./assets/css/index.css" />
 	<!-- text fonts -->
@@ -145,7 +143,7 @@
 		try{ace.settings.loadState('main-container')}catch(e){}
 	</script>
 
-	<div id="sidebar" class="sidebar                  responsive                    ace-save-state"> <!--menubar-->
+	<div id="sidebar" class="sidebar responsive ace-save-state"> <!--menubar-->
 		<script type="text/javascript">
 			try{ace.settings.loadState('sidebar')}catch(e){}
 		</script>
@@ -665,7 +663,7 @@
 						if(last_gritter) $.gritter.remove(last_gritter);
 						last_gritter = $.gritter.add({
 							title: 'Avatar Updated!',
-							text: 'Uploading to server can be easily implemented. A working example is included with the template.',
+							//text: 'Uploading to server can be easily implemented. A working example is included with the template.',
 							class_name: 'gritter-info gritter-center'
 						});
 					} , parseInt(Math.random() * 800 + 800))
