@@ -590,14 +590,15 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-4">Fecha de
                                     atencion</label>
                                 <div class="col-sm-4">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-5">
                                         <div class="input-group">
                                             <input class="form-control date-picker" id="id-date-picker-2" type="text"
                                                    data-date-format="dd-mm-yyyy"/>
                                             <span class="input-group-addon">
-											    <i class="fa fa-calendar bigger-110"></i>
+											    <i class="fa fa-calendar bigger-120"></i>
                                             </span>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -624,13 +625,13 @@
                                 <label class="col-sm-3 control-label no-padding-right"
                                        for="form-field-4">Nacimiento</label>
                                 <div class="col-sm-4">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-5">
                                         <div class="input-group">
                                             <input class="form-control date-picker" id="id-date-picker-1" type="text"
                                                    data-date-format="dd-mm-yyyy"/>
                                             <span class="input-group-addon">
-																		<i class="fa fa-calendar bigger-110"></i>
-																	</span>
+											    <i class="fa fa-calendar bigger-110"></i>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -656,14 +657,16 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-4">Nivel
                                     educativo</label>
+                                <div class="col-sm-9">
 
-                                <select class="col-sm-4" id="form-field-select-1">
-                                    <option value=""></option>
-                                    <option value="AL">Primaria</option>
-                                    <option value="AL">Secundaria</option>
-                                    <option value="AL">Superior</option>
-                                </select>
-
+                                    <select class="col-sm-2" id="form-field-select-2">
+                                        <option value=""></option>
+                                        <option value="AL">Primaria</option>
+                                        <option value="AL">Secundaria</option>
+                                        <option value="AL">Superior</option>
+                                    </select>
+                                    <div class="space-2"></div>
+                                </div>
                             </div>
 
                             <div class="form-group">
@@ -675,7 +678,6 @@
                                     <div class="space-6"></div>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-4">Ocupaci&oacute;n</label>
 
@@ -991,19 +993,6 @@
             }
         });
 
-        $("#input-span-slider").slider({
-            value: 1,
-            range: "min",
-            min: 1,
-            max: 12,
-            step: 1,
-            slide: function (event, ui) {
-                var val = parseInt(ui.value);
-                $('#form-field-5').attr('class', 'col-xs-' + val).val('.col-xs-' + val);
-            }
-        });
-
-
         //"jQuery UI Slider"
         //range slider tooltip example
         $("#slider-range").css('height', '200px').slider({
@@ -1176,49 +1165,27 @@
              */
 
         });
-
-        $('#spinner1').ace_spinner({
-            value: 0,
-            min: 0,
-            max: 200,
-            step: 10,
-            btn_up_class: 'btn-info',
-            btn_down_class: 'btn-info'
-        })
-                .closest('.ace-spinner')
-                .on('changed.fu.spinbox', function () {
-                    //console.log($('#spinner1').val())
-                });
-        $('#spinner2').ace_spinner({
-            value: 0,
-            min: 0,
-            max: 10000,
-            step: 100,
-            touch_spinner: true,
-            icon_up: 'ace-icon fa fa-caret-up bigger-110',
-            icon_down: 'ace-icon fa fa-caret-down bigger-110'
-        });
         $('#spinner3').ace_spinner({
             value: 0,
-            min: -100,
+            min: 0,
             max: 100,
             step: 1,
             on_sides: true,
             icon_up: 'ace-icon fa fa-plus bigger-110',
             icon_down: 'ace-icon fa fa-minus bigger-110',
-            btn_up_class: 'btn-success',
-            btn_down_class: 'btn-danger'
+            btn_up_class: 'btn-blue',
+            btn_down_class: 'btn-blue'
         });
         $('#spinner4').ace_spinner({
             value: 0,
-            min: -100,
+            min: 0,
             max: 100,
-            step: 10,
+            step: 1,
             on_sides: true,
             icon_up: 'ace-icon fa fa-plus',
             icon_down: 'ace-icon fa fa-minus',
-            btn_up_class: 'btn-purple',
-            btn_down_class: 'btn-purple'
+            btn_up_class: 'btn-blue',
+            btn_down_class: 'btn-blue'
         });
 
         //$('#spinner1').ace_spinner('disable').ace_spinner('value', 11);
