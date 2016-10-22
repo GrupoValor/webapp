@@ -1,98 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- google map -->
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Intranet</title>
 
-        #map {
-            height: 100%;
-        }
-
-        .controls {
-            margin-top: 10px;
-            border: 1px solid transparent;
-            border-radius: 2px 0 0 2px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            height: 32px;
-            outline: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        #pac-input {
-            background-color: #fff;
-            font-family: Roboto;
-            font-size: 15px;
-            font-weight: 300;
-            margin-left: 12px;
-            padding: 0 11px 0 13px;
-            text-overflow: ellipsis;
-            width: 300px;
-        }
-
-        #pac-input:focus {
-            border-color: #4d90fe;
-        }
-
-        .pac-container {
-            font-family: Roboto;
-        }
-
-        #type-selector {
-            color: #fff;
-            background-color: #4d90fe;
-            padding: 5px 11px 0px 11px;
-        }
-
-        #type-selector label {
-            font-family: Roboto;
-            font-size: 13px;
-            font-weight: 300;
-        }
-
-    </style>
-    <title>Intranet | Mapa</title>
-    <style>
-        #target {
-            width: 345px;
-        }
-    </style>
-
-    <!-- google map -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta charset="utf-8"/>
-    <title>Intranet | Mapa de alertas</title>
-
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Draggabble Widget Boxes with Persistent Position and State" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- bootstrap & fontawesome -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 
     <!-- page specific plugin styles -->
-    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+
     <!-- text fonts -->
-    <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css"/>
+    <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
 
     <!-- ace styles -->
-    <link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style"/>
+    <link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet"/>
+    <link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
     <![endif]-->
-    <link rel="stylesheet" href="assets/css/ace-skins.min.css"/>
-    <link rel="stylesheet" href="assets/css/ace-rtl.min.css"/>
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
 
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ace-ie.min.css"/>
+    <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
     <![endif]-->
 
     <!-- inline styles related to this page -->
@@ -106,14 +44,6 @@
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
-
-    <!-- el link da errores en la cabecera-->
-
-
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body class="no-skin">
@@ -169,30 +99,6 @@
                                         Bob just signed up as an editor ...
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-													<span class="pull-left">
-														<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
-														New Orders
-													</span>
-                                            <span class="pull-right badge badge-success">+8</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-													<span class="pull-left">
-														<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
-														Followers
-													</span>
-                                            <span class="pull-right badge badge-info">+11</span>
-                                        </div>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
 
@@ -205,10 +111,9 @@
                     </ul>
                 </li>
 
-
                 <li class="light-blue dropdown-modal">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo"/>
+                        <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
                         <span class="user-info">
 									<small>Bienvenido,</small>
 									Luis
@@ -218,13 +123,6 @@
                     </a>
 
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-cog"></i>
-                                Settings
-                            </a>
-                        </li>
-
                         <li>
                             <a href="profile.html">
                                 <i class="ace-icon fa fa-user"></i>
@@ -247,51 +145,15 @@
     </div><!-- /.navbar-container -->
 </div>
 
-<div class="main-container ace-save-state" id="main-container" style="width:100%; height:100%">
+<div class="main-container ace-save-state" id="main-container">
     <script type="text/javascript">
-        try {
-            ace.settings.loadState('main-container')
-        } catch (e) {
-        }
+        try{ace.settings.loadState('main-container')}catch(e){}
     </script>
 
     <div id="sidebar" class="sidebar                  responsive                    ace-save-state">
         <script type="text/javascript">
-            try {
-                ace.settings.loadState('sidebar')
-            } catch (e) {
-            }
+            try{ace.settings.loadState('sidebar')}catch(e){}
         </script>
-
-        <!--<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-            <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                <button class="btn btn-success">
-                    <i class="ace-icon fa fa-signal"></i>
-                </button>
-
-                <button class="btn btn-info">
-                    <i class="ace-icon fa fa-pencil"></i>
-                </button>
-
-                <button class="btn btn-warning">
-                    <i class="ace-icon fa fa-users"></i>
-                </button>
-
-                <button class="btn btn-danger">
-                    <i class="ace-icon fa fa-cogs"></i>
-                </button>
-            </div>
-
-            <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                <span class="btn btn-success"></span>
-
-                <span class="btn btn-info"></span>
-
-                <span class="btn btn-warning"></span>
-
-                <span class="btn btn-danger"></span>
-            </div>
-        </div><!-- /.sidebar-shortcuts -->
 
         <ul class="nav nav-list">
             <li class="">
@@ -299,215 +161,8 @@
                     <i class="menu-icon fa fa-tachometer"></i>
                     <span class="menu-text"> Principal </span>
                 </a>
-                <b class="arrow"></b>
-            </li>
-
-            <li class="">
-                <a href="profile.html">
-                    <!--<i class="menu-icon fa fa-list"></i>-->
-                    <i class="menu-icon fa fa-user"></i>
-                    <span class="menu-text"> Página Personal </span>
-
-                    <!--<b class="arrow f-angle-down"></b>-->
-                </a>
-            </li>
-
-            <li class="hidden">
-                <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-desktop"></i>
-                    <span class="menu-text">
-								UI &amp; Elements
-							</span>
-
-                    <b class="arrow fa fa-angle-down"></b>
-                </a>
 
                 <b class="arrow"></b>
-
-                <ul class="submenu">
-                    <li class="">
-                        <a href="#" class="dropdown-toggle">
-                            <i class="menu-icon fa fa-caret-right"></i>
-
-                            Layouts
-                            <b class="arrow fa fa-angle-down"></b>
-                        </a>
-
-                        <b class="arrow"></b>
-
-                        <ul class="submenu">
-                            <li class="">
-                                <a href="top-menu.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Top Menu
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="two-menu-1.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Two Menus 1
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="two-menu-2.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Two Menus 2
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="mobile-menu-1.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Default Mobile Menu
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="mobile-menu-2.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Mobile Menu 2
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="mobile-menu-3.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    Mobile Menu 3
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="">
-                        <a href="typography.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Typography
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="elements.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Elements
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="buttons.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Buttons &amp; Icons
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="content-slider.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Content Sliders
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="treeview.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Treeview
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="jquery-ui.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            jQuery UI
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="nestable-list.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Nestable Lists
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="#" class="dropdown-toggle">
-                            <i class="menu-icon fa fa-caret-right"></i>
-
-                            Three Level Menu
-                            <b class="arrow fa fa-angle-down"></b>
-                        </a>
-
-                        <b class="arrow"></b>
-
-                        <ul class="submenu">
-                            <li class="">
-                                <a href="#">
-                                    <i class="menu-icon fa fa-leaf green"></i>
-                                    Item #1
-                                </a>
-
-                                <b class="arrow"></b>
-                            </li>
-
-                            <li class="">
-                                <a href="#" class="dropdown-toggle">
-                                    <i class="menu-icon fa fa-pencil orange"></i>
-
-                                    4th level
-                                    <b class="arrow fa fa-angle-down"></b>
-                                </a>
-
-                                <b class="arrow"></b>
-
-                                <ul class="submenu">
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-plus purple"></i>
-                                            Add Product
-                                        </a>
-
-                                        <b class="arrow"></b>
-                                    </li>
-
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-eye pink"></i>
-                                            View Products
-                                        </a>
-
-                                        <b class="arrow"></b>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </li>
 
             <li class="">
@@ -538,28 +193,7 @@
 
                         <b class="arrow"></b>
                     </li>
-                    <!--
-                    <li class="">
-                        <a href="form-wizard.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Wizard &amp; Validation
-                        </a>
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="wysiwyg.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Wysiwyg &amp; Markdown
-                        </a>
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="dropzone.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Dropzone File Upload
-                        </a>
-                        <b class="arrow"></b>
-                    </li>-->
+
                 </ul>
             </li>
 
@@ -595,179 +229,6 @@
                 </ul>
             </li>
 
-            <li class="hidden">
-                <a href="calendar.html">
-                    <i class="menu-icon fa fa-calendar"></i>
-
-                    <span class="menu-text">
-								Calendar
-
-								<span class="badge badge-transparent tooltip-error" title="2 Important Events">
-									<i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
-								</span>
-							</span>
-                </a>
-
-                <b class="arrow"></b>
-            </li>
-
-            <li class="hidden">
-                <a href="gallery.html">
-                    <i class="menu-icon fa fa-picture-o"></i>
-                    <span class="menu-text"> Gallery </span>
-                </a>
-
-                <b class="arrow"></b>
-            </li>
-
-            <li class="hidden">
-                <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-tag"></i>
-                    <span class="menu-text"> More Pages </span>
-
-                    <b class="arrow fa fa-angle-down"></b>
-                </a>
-
-                <b class="arrow"></b>
-
-                <ul class="submenu">
-                    <li class="">
-                        <a href="profile.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            User Profile
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="inbox.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Inbox
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="pricing.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Pricing Tables
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="invoice.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Invoice
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="timeline.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Timeline
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="search.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Search Results
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="email.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Email Templates
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="login.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Login &amp; Register
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="hidden">
-                <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-file-o"></i>
-
-                    <span class="menu-text">
-								Other Pages
-
-								<span class="badge badge-primary">5</span>
-							</span>
-
-                    <b class="arrow fa fa-angle-down"></b>
-                </a>
-
-                <b class="arrow"></b>
-
-                <ul class="submenu">
-                    <li class="">
-                        <a href="faq.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            FAQ
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="error-404.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Error 404
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="error-500.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Error 500
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="grid.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Grid
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="blank.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Blank Page
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                </ul>
-            </li>
-
             <li class="">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-book"></i>
@@ -798,14 +259,6 @@
                         <b class="arrow"></b>
                     </li>
 
-                    <li class="hidden">
-                        <a href="jqgrid.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Modificación
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
                 </ul>
             </li>
 
@@ -821,8 +274,8 @@
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-desktop"></i>
                     <span class="menu-text">
-								Mantenimientos
-							</span>
+						Mantenimientos
+					</span>
 
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
@@ -949,15 +402,43 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Clinicas
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
 
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="mantenimientoClinica.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Registrar
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <a href="mantCliniModificar.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Modificar
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li class="">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-file-o"></i>
                     <span class="menu-text">
-								Reportes
-							</span>
+						Reportes
+                    </span>
 
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
@@ -988,6 +469,7 @@
                     </li>
                 </ul>
             </li>
+
             <li class=""> <!--Gestor de contenidos-->
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-cog"></i>
@@ -1041,11 +523,11 @@
                     </li>
                 </ul>
             </li> <!--Gestor de contenido -->
+
         </ul><!-- /.nav-list -->
 
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
-            <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state"
-               data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
         </div>
     </div>
 
