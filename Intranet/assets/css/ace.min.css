@@ -19207,3 +19207,7 @@ input.typeahead.scrollable~.tt-menu {
         border: 1px solid #666!important
     }
 }
+
+.FormGrid .EditTable tr:first-child {
+    display: table-row;
+}
